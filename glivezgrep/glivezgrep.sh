@@ -47,7 +47,6 @@ Uso:  $(basename "$0") [<e-mail>|<globoId>] <path>
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-authenticate*
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-authorize*
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-block-unblock-users*
-        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-daemon*
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-external-integration*
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-glbid*
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-password*
@@ -62,8 +61,8 @@ Uso:  $(basename "$0") [<e-mail>|<globoId>] <path>
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-parental-consent*
 
       "$IBlue"Exemplos de busca em um determinado periodo:
-        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/{01..05}/glive-auth*
-        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/{11..20}/glive-provision*$NC
+        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/'{01..05}'/*/glive-auth*
+        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/'{11..20}'/*/glive-provision*$NC
 "
 
 # Mostra a mensagem de ajuda quando necessario
