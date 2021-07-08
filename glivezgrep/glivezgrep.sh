@@ -17,8 +17,8 @@ ICyan='\033[0;96m'        # Cyan
 IWhite='\033[0;97m'       # White
 NC="\033[0m"              # Reset Colors
 
-# Definindo o ip de um dos servidores do glive no caso abaixo glive-prod-be-dccm-cmal07be-06
-glive_server="10.133.70.49"
+# Definindo o servidor para busca dos logs
+glive_server="trata-logs-glive.cmal22be-87.cp.globoi.com"
 
 # Definindo o caminho para os diretorios de logs
 logsdir="/mnt/projetos/logs/glive/be"
@@ -62,8 +62,8 @@ Uso:  $(basename "$0") [<e-mail>|<globoId>] <path>
         $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-03/04/*/glive-parental-consent*
 
       "$IBlue"Exemplos de busca em um determinado periodo:
-        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/{'01..05'}/glive-auth*
-        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/{'11..20'}/glive-provision*$NC
+        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/{01..05}/glive-auth*
+        $(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039 2021-05/{11..20}/glive-provision*$NC
 "
 
 # Mostra a mensagem de ajuda quando necessario
