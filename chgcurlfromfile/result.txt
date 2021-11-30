@@ -1,0 +1,465 @@
+-------------------------------
+curl -sIL g1.globo.com/pop-arte/cinema/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pop-arte/cinema/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/concursos-e-emprego/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/economia/concursos-e-emprego/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/educacao/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/educacao/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/educacao/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/educacao/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/educacao/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/educacao/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/minas-gerais/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/mg/minas-gerais/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/pernambuco/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pe/pernambuco/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL http://g1.globo.com/pop-arte/musica/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 404 Not Found
+-------------------------------
+curl -sIL http://g1.globo.com/pop-arte/musica/rock-in-rio/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 404 Not Found
+-------------------------------
+curl -sIL http://g1.globo.com/pop-arte/musica/lollapalooza/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 404 Not Found
+-------------------------------
+curl -sIL g1.globo.com/pr/parana/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pr/parana/videos/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pr/parana/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/al/alagoas/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/al/alagoas/videos/
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/am/amazonas/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/bahia/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pe/caruaru-regiao/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ceara/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/mg/centro-oeste/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/espirito-santo/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/goias/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ma/maranhao/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/mato-grosso-do-sul/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/mato-grosso/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pa/para/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pb/paraiba/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ro/rondonia/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/rr/roraima/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/rs/rio-grande-do-sul/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/sc/santa-catarina/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/se/sergipe/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/to/tocantins/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/minas-gerais/triangulo-mineiro/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/politica/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ac/acre/eleicoes/2014/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/ac/acre/eleicoes/2014/videos/
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/al/alagoas/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/am/amazonas/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ap/amapa/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/bahia/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ceara/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/distrito-federal/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/espirito-santo/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/goias/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ma/maranhao/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/minas-gerais/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/mato-grosso-do-sul/eleicoes/2014/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/mato-grosso-do-sul/eleicoes/2014/videos/
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/mato-grosso/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pa/para/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pb/paraiba/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pernambuco/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pi/piaui/eleicoes/2014/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pi/piaui/eleicoes/2014/videos/
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pr/parana/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/rio-de-janeiro/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/rn/rio-grande-do-norte/eleicoes/2014/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rn/rio-grande-do-norte/eleicoes/2014/videos/
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ro/rondonia/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/rr/roraima/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/rs/rio-grande-do-sul/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/sc/santa-catarina/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/se/sergipe/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/sao-paulo/eleicoes/2014/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sao-paulo/eleicoes/2014/videos/
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/to/tocantins/eleicoes/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/politica/eleicoes/2016/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/politica/eleicoes/2016/videos/
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/mg/grande-minas/intertv-rural/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/espirito-santo/gazeta-comunidade/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pr/parana/globo-comunidade/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ro/ariquemes-e-vale-do-jamari/jornal-de-rondonia/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ro/ariquemes-e-vale-do-jamari/rondonia-tv/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/globo-news/ciencia-e-tecnologia/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/globo-news-eleicoes/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/saude/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/miriam-leitao-especial/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/navegador/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/nelson-motta-especial/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/por-exemplo/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/retratos-brasileiros/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/sarau/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/starte/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globo-news/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/globonews/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/distrito-federal/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/distrito-federal/
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/df/distrito-federal/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/df/distrito-federal/
+X-Served-From: Core rewrite
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/pr/parana/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pr/parana/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/mg/vales-mg/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/bahia/festival-de-verao/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pop-arte/flip/2014/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/pernambuco/globo-verao/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/tecnologia/games/madrugames/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL http://g1.globo.com/mg/grande-minas/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ro/ariquemes-e-vale-do-jamari/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/ro/cacoal-e-zona-da-mata/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 200 OK
+-------------------------------
+curl -sIL g1.globo.com/natureza/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/natureza/videos/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/natureza/playlist/videos-veja-videos-sobre-natureza.ghtml
+HTTP/2 200 
+x-served-from: Show Services
+-------------------------------
+curl -sIL g1.globo.com/politica/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/politica/videos/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/politica/playlist/videos-veja-videos-sobre-politica.ghtml
+HTTP/2 200 
+x-served-from: Show Services
+-------------------------------
+curl -sIL g1.globo.com/rock-in-rio/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/musica/rock-in-rio/2017/videos/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pop-arte/musica/rock-in-rio/2019/playlist/videos-rock-in-rio-2019.ghtml
+HTTP/2 200 
+x-served-from: Show Services
+-------------------------------
+curl -sIL g1.globo.com/pop-arte/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pop-arte/videos/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pop-arte/playlist/videos-veja-videos-sobre-arte-cultura-e-entretenimento.ghtml
+HTTP/2 200 
+x-served-from: Show Services
+-------------------------------
+curl -sIL g1.globo.com/rio-de-janeiro/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rio-de-janeiro/videos/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rj/rio-de-janeiro/playlist/videos-tudo-sobre-rio-de-janeiro.ghtml
+HTTP/2 200 
+x-served-from: Show Services
+-------------------------------
+curl -sIL g1.globo.com/sao-paulo/videos | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sao-paulo/videos/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/sao-paulo/playlist/videos-tudo-sobre-sao-paulo.ghtml
+HTTP/2 200 
+x-served-from: Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/globo-news-em-pauta/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/globonews-em-pauta/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/jornal-das-dez/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/jornal-das-dez/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/jornal-globo-news/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/jornal-globonews/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL g1.globo.com/globo-news/sem-fronteiras/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/globonews/sem-fronteiras/
+HTTP/2 200 
+x-served-from: Core, Show Services
+-------------------------------
+curl -sIL http://g1.globo.com/turismo-e-viagem/videos/ | egrep -i '(http|location|served-from)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/turismo-e-viagem/playlist/videos-viagem-e-turismo.ghtml
+HTTP/2 200 
+x-served-from: Show Services
+-------------------------------

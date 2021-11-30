@@ -1,0 +1,368 @@
+-------------------------------
+curl -sIL http://g1.globo.com/goias/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/go/goias/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/go/goias/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/go/goias/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/mato-grosso/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/mt/mato-grosso/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/mt/mato-grosso/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/mato-grosso-do-sul/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ms/mato-grosso-do-sul/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/al/alagoas/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/al/alagoas/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/al/alagoas/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/al/alagoas/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/bahia/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ba/bahia/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ceara/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ce/ceara/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ma/maranhao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ma/maranhao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pb/paraiba/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pb/paraiba/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pb/paraiba/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pi/piaui/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pi/piaui/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/rn/rio-grande-do-norte/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rn/rio-grande-do-norte/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/se/sergipe/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/se/sergipe/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pe/caruaru-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pe/caruaru-regiao/ultimas-noticias
+HTTP/2 301 
+location: http://g1.globo.com/pe/caruaru-regiao/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pe/caruaru-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pe/petrolina-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pe/petrolina-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ac/acre/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ac/acre/ultimas-noticias/
+HTTP/2 404 
+-------------------------------
+curl -sIL http://g1.globo.com/ac/cruzeiro-do-sul-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ac/cruzeiro-do-sul-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ap/amapa/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ap/amapa/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/am/amazonas/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/am/amazonas/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/am/amazonas/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/am/amazonas/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pa/para/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pa/para/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pa/para/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pa/para/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pa/santarem-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pa/santarem-regiao/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pa/santarem-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ro/rondonia/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/ro/rondonia/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/ro/rondonia/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ro/rondonia/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ro/ariquemes-e-vale-do-jamari/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ro/ariquemes-e-vale-do-jamari/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ro/cacoal-e-zona-da-mata/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ro/cacoal-e-zona-da-mata/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ro/ji-parana-regiao-central/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/ro/ji-parana-regiao-central/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ro/ji-parana-regiao-central/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/ro/vilhena-e-cone-sul/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/ro/vilhena-e-cone-sul/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/ro/vilhena-e-cone-sul/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/ro/vilhena-e-cone-sul/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/rr/roraima/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rr/roraima/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rr/roraima/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rr/roraima/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/to/tocantins/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/to/tocantins/ultimas-noticias
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/to/tocantins/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/to/tocantins/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/espirito-santo/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/es/espirito-santo/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/mg/centro-oeste/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/mg/centro-oeste/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/mg/centro-oeste/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/mg/grande-minas/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/mg/grande-minas/ultimas-noticias/
+HTTP/1.1 404 Not Found
+-------------------------------
+curl -sIL http://g1.globo.com/mg/sul-de-minas/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/mg/sul-de-minas/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/mg/sul-de-minas/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/minas-gerais/triangulo-mineiro/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/mg/triangulo-mineiro/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/mg/vales-mg/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/mg/vales-mg/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/mg/vales-mg/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/mg/zona-da-mata/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/mg/zona-da-mata/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/mg/zona-da-mata/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/rj/norte-fluminense/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rj/norte-fluminense/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rj/norte-fluminense/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/rj/regiao-dos-lagos/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rj/regiao-dos-lagos/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rj/regiao-dos-lagos/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/rj/regiao-serrana/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rj/regiao-serrana/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rj/regiao-serrana/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/rj/sul-do-rio-costa-verde/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rj/sul-do-rio-costa-verde/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rj/sul-do-rio-costa-verde/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/bauru-marilia/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/bauru-marilia/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/bauru-marilia/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/campinas-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/campinas-regiao/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/campinas-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sao-paulo/itapetininga-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/itapetininga-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/mogi-das-cruzes-suzano/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/mogi-das-cruzes-suzano/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/mogi-das-cruzes-suzano/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/piracicaba-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/piracicaba-regiao/ultimas-noticias/
+HTTP/1.1 404 Not Found
+-------------------------------
+curl -sIL http://g1.globo.com/sp/presidente-prudente-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/presidente-prudente-regiao/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/presidente-prudente-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/ribeirao-preto-franca/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/ribeirao-preto-franca/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/ribeirao-preto-franca/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sao-paulo/sao-jose-do-rio-preto-aracatuba/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/sao-jose-do-rio-preto-aracatuba/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/santos-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/santos-regiao/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/santos-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/sao-carlos-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/sao-carlos-regiao/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/sao-carlos-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sao-paulo/sorocaba-jundiai/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/sorocaba-jundiai/ultimas-noticias
+HTTP/2 301 
+location: http://g1.globo.com/sp/sorocaba-jundiai/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/sorocaba-jundiai/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sp/vale-do-paraiba-regiao/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sp/vale-do-paraiba-regiao/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sp/vale-do-paraiba-regiao/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pr/parana/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pr/parana/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pr/parana/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pr/campos-gerais-sul/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pr/campos-gerais-sul/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pr/campos-gerais-sul/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pr/norte-noroeste/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pr/norte-noroeste/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pr/norte-noroeste/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/pr/oeste-sudoeste/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/pr/oeste-sudoeste/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/pr/oeste-sudoeste/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/rs/rio-grande-do-sul/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/rs/rio-grande-do-sul/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/rs/rio-grande-do-sul/ultimas-noticias/
+HTTP/2 200 
+-------------------------------
+curl -sIL http://g1.globo.com/sc/santa-catarina/ultimas-noticias.html | egrep -i '(http|location)'
+HTTP/1.1 301 Moved Permanently
+Location: http://g1.globo.com/sc/santa-catarina/ultimas-noticias/
+HTTP/1.1 301 Moved Permanently
+Location: https://g1.globo.com/sc/santa-catarina/ultimas-noticias/
+HTTP/2 200 
+-------------------------------

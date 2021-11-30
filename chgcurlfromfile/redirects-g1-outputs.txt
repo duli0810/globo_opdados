@@ -1,0 +1,804 @@
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/iptu-a-contribuicao-que-gera-beneficios-para-a-populacao-de-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/maestro-joao-carlos-martins-e-destaque-em-circuito-jacareiense.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/carreta-do-programa-mulheres-de-peito-oferece-mamografias-em-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/meio-ambiente-lanca-calendario-de-servicos-no-site-na-prefeitura-de-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/domingo-no-parque-tera-novas-atividades-a-partir-de-abril-em-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/post/2018/03/12/prefeitura-prioriza-emissao-de-avcbs-nas-escolas-municipais-de-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-366-anos-um-presente-para-o-futuro.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/projeto-agente-de-transito-mirim-leva-educacao-no-transito-para-sala-de-aula.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/corporacao-de-jacarei-ganha-reforco-de-28-guardas-civis.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/educacao-lanca-jacarei-cidade-leitora-para-professores-municipais.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/novo-retorno-facilita-acesso-dos-motoristas-ao-educamais-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-tem-transito-mais-seguro.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/pat-de-jacarei-mantem-alta-na-oferta-de-emprego.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/aula-gratuita-e-oportunidade-para-aprender-tenis-em-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-apresenta-coi-em-consulta-publica-para-cerca-de-100-pessoas.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-reduz-52-das-multas-de-radar-movel.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-ganhara-primeiro-parque-linear-no-campo-grande.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/saae-jacarei-40-anos-marcar-historia-e-investir-na-qualidade-de-vida.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-tera-oito-novas-academias-ao-ar-livre.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-abre-licitacao-para-retomada-das-obras-do-corrego-do-turi.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/obras-de-novas-creches-em-jacarei-seguem-em-ritmo-acelerado.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-tem-financiamento-aprovado-de-cerca-de-r-240-milhoes-para-pacote-de-obras.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/prefeitura-de-jacarei-abre-licitacao-para-implantacao-do-coi.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/julho-amarelo-saude-promove-exames-rapidos-para-identificar-hepatite.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-tera-ainda-este-ano-mais-tres-novas-creches.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/jacarei-tem-pesquisa-inedita-sobre-habito-de-consumo-na-cidade.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/sim-dobra-atendimento-e-bate-marca-de-42-mil-atendimentos-em-6-meses-em-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2018/08/13/alunos-da-rede-municipal-transformam-jacarei-em-uma-cidade-leitora.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2018/08/13/prefeitura-de-jacarei-anuncia-mais-de-r-51-milhoes-em-obras-de-saneamento-e-infraestrutura.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2018/08/13/jacarei-registra-diminuicao-nas-faltas-em-consultas-odontologicas.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2018/08/13/saude-avanca-e-zera-fila-por-procedimentos.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2018/08/13/prefeitura-vai-comprar-mais-de-72-mil-consultas-para-rede-publica-de-saude.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2018/09/05/desfile-civico-leva-tema-jacarei-cidade-leitora-para-a-avenida.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2018/09/24/saae-inicia-mais-oito-obras-em-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/02/08/educacao-abre-inscricoes-para-vagas-em-creches-municipais.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/02/08/jacarei-abre-inscricoes-para-o-programa-empreendedoras-da-moda.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/02/08/danca-jacarei-retoma-atividades-no-parque-da-cidade.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/02/08/danca-jacarei-retoma-atividades-no-parque-da-cidade.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/02/08/diretoria-de-trabalho-e-renda-fecha-o-ano-de-2018-com-destaque-regional.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/02/08/jacarei-registra-queda-de-38-nos-casos-de-dengue.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/02/08/dois-anos-de-trabalho-milhoes-de-reais-investidos-e-um-retorno-que-vai-alem-dos-numeros.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/03/25/meio-ambiente-renova-convenio-com-etec-para-abrigar-animais.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/03/25/prefeitura-comeca-projeto-participa-jacarei-no-proximo-dia-25.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/03/25/licitacao-define-proposta-para-implantacao-do-coi.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/03/25/prefeitura-prioriza-seguranca-e-agiliza-avcb-de-escolas.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/03/25/inscricoes-para-creches-acontecem-as-tercas-e-quartas-feiras.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/03/25/prefeitura-entrega-mais-uma-nova-creche-em-jacarei.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/03/26/aniversario-de-jacarei-traz-uma-semana-de-programacao-para-toda-a-populacao.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/04/16/secretaria-de-saude-inaugura-nova-unidade-do-caps-infanto-juvenil.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/04/16/projeto-agente-de-transito-mirim-leva-boas-praticas-no-transito-para-a-rede-municipal-de-ensino.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/04/16/programa-familia-segura-inaugura-com-foco-no-enfrentamento-da-violencia-domestica-familiar.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/04/16/jacarei-inaugura-unidade-de-atendimento-de-reintegracao-social.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/04/16/saae-conclui-adutora-e-aumenta-capacidade-de-abastecimento-no-distrito-do-meia-lua.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/04/16/prefeitura-investe-na-educacao-com-mais-vagas-em-creches-e-reformas.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/05/16/vacinar-se-e-proteger-voce-e-toda-a-cidade.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/05/16/parque-santo-antonio-ganha-novo-espaco-esportivo-pedro-zanone.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/05/16/saae-implanta-teste-de-fumaca-para-detectar-lancamentos-irregulares-de-esgoto.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/05/16/saae-implanta-teste-de-fumaca-para-detectar-lancamentos-irregulares-de-esgoto.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/05/16/jacarei-tera-mais-uma-edicao-da-feira-do-bolinho-caipira.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/05/16/educacao-e-fatec-desenvolvem-projeto-horta-na-escola.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/06/14/bem-morar-reforma-casa-no-bairro-22-de-abril.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/06/14/familia-segura-enfrentamento-a-violencia-domestica-e-familiar.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/06/14/prefeitura-digitalizou-holerites-e-vai-economizar-r40-mil-por-ano.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/06/14/prefeitura-digitalizou-holerites-e-vai-economizar-r40-mil-por-ano.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/06/14/pat-registra-aumento-de-40percent-no-volume-de-contratacoes-em-maio.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/noticia/2019/06/14/jacarei-ganha-primeira-academia-ao-ar-livre-adaptada-para-deficientes-fisicos.ghtml | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+x-[01;31m[Kserved-from[m[K: Show Services
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
+curl -sIL https://g1.globo.com/sp/vale-do-paraiba-regiao/especial-publicitario/prefeitura-de-jacarei/ | egrep -i '(http|location|served-from)'
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao
+[01;31m[KHTTP[m[K/2 301 
+[01;31m[Klocation[m[K: [01;31m[Khttp[m[K://g1.globo.com/sp/vale-do-paraiba-regiao/
+[01;31m[KHTTP[m[K/1.1 301 Moved Permanently
+[01;31m[KLocation[m[K: [01;31m[Khttp[m[Ks://g1.globo.com/sp/vale-do-paraiba-regiao/
+X-[01;31m[KServed-From[m[K: Core rewrite
+[01;31m[KHTTP[m[K/2 200 
+x-[01;31m[Kserved-from[m[K: Core, Show Services
+-------------------------------
