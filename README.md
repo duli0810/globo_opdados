@@ -17,7 +17,7 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 * chgcurlfromfile
 >É utilizado para executar, em loop, o comando ```curl``` para cada **url** listada em um arquivo qualquer, definido a gosto, com a finalidade de obter os saltos de redirect.
 
-## Scripts para Ajudar no Troubleshoot de Incidentes
+## Scripts para Ajudar no Troubleshoot de Incidentes e Requisições
 
 * clientgloboidinfo
 >É utilizado para trazer as infromações de cadastro de usuários no Glive, bem como o status no integrador (eva-int) e as infromações dos ids de serviço provisionados.
@@ -42,6 +42,9 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 
 * checkconnectcli
 >É utilizado para trazer as infromações de autenticação e troca de tokens entre as apps que compõe o sistema do **globoid-connect**.
+
+* gsatmultibezegrep
+>É utilizado para trazer logs de BE do **Gsatmulti** para descobrir qual conta de usuário já estaria associada a operadora de um determinado cliente que não consegue fazer essa associação com sua conta atual.
 
 ## Scripts para Ajudar no Troubleshoot de Eventos
 
