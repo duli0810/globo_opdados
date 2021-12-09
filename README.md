@@ -46,6 +46,9 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 * gsatmultibezegrep
 >É utilizado para trazer logs de BE do **Gsatmulti** para descobrir qual conta de usuário já estaria associada a operadora de um determinado cliente que não consegue fazer essa associação com sua conta atual.
 
+* check_blacklist
+>É utilizado para checar se o domínio do cliente/solicitante encontra-se na blacklist do globoid.
+
 ## Scripts para Ajudar no Troubleshoot de Eventos
 
 * checkssl
