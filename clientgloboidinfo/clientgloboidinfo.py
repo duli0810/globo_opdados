@@ -31,20 +31,33 @@ clientid="developer"
 url_email = f'http://be.glive.globoi.com/v2/users/email/{last_param}'
 url_id = f'http://be.glive.globoi.com/v2/users/{last_param}'
 url_eva_int = f'http://eva-int.globoi.com/cliente/valida/{last_param}'
-url_detailed_services = f'http://be.glive.globoi.com/v2/users/{last_param}/services'
 header = ('Backstage-Client-Id', clientid)
+servicespreventuserdeletion = [
+                                1, 4, 84, 151, 309, 972, 
+                                1007, 1948, 3033, 5906, 6004, 6236, 
+                                6289, 6445, 6487, 6661, 6698, 6753, 
+                                6759, 6760, 6767, 6778, 6807, 6828, 
+                                6829, 6917, 6774, 6773, 6771, 6770, 
+                                6769, 6768, 6767, 6766, 6765, 6764, 
+                                6763, 6762, 6761, 6760, 6759, 6758, 
+                                6757, 6756, 6755, 6754, 6753, 6752, 
+                                6750, 6772, 6248, 465, 6709, 6851
+                            ]
 
 usage_msg=f'''
 Usage: {cmd} <options> [<e-mail> | <globoid>] 
     Options:
-    -h, --help                      show this help msg
-    -r, --resume                    main globoid information
+    -h, --help                      show this help msg.
+    -d, --data-only                 show only user data.
+    -r, --resume                    main globoid information, including 
+                                    services that prevent user deletion.
     -s, --services <string>         shows the specific services 
                                     according to the search 
                                     string in its description.
 
     Usage Examples:
         {cmd} operacao.producao@corp.globo.com
+        {cmd} -d operacao.producao@corp.globo.com
         {cmd} -r operacao.producao@corp.globo.com
         {cmd} --service premiere operacao.producao@corp.globo.com
         {cmd} -s combate leonardo.brito@corp.globo.com
@@ -73,50 +86,53 @@ def main():
         else:
             i = cmd_args_list.index('--service')
         print(output(info_list, service = cmd_args_list[i+1]))
+    elif '-d' in cmd_args_list or '--data-only' in cmd_args_list:
+        print(output(info_list, data_only = True))
     else:
         print(output(info_list))
 
-def output(info_list, resume = False, service = None):
-    output = f'\n{IYellow}VALIDAÇÃO NA APP EVA-INT-PROD{NC}\n'
+def output(info_list, resume = False, service = None, data_only = None):
+    output = f'\n{IYellow}VALIDAÇÃO NA APP EVA-INT-PROD{NC}\n{IPurple}(http://eva-int.globoi.com/cliente/valida/{info_list[1]["globoId"]}){NC}\n'
     if info_list[0] == 'Não encontrado':
         output += f'{IRed}{info_list[0]}{NC}\n'
     else:
-        output += f'{IGreen}{info_list[0]["origem"]}{NC}\n'
+        output += f'{info_list[0]}\n'
     if resume == True:
-        output += f'\n{IYellow}INFORMAÇÕES RESUMIDAS DO USUÁRIO PELO GLIVE{NC}\n'
+        output += f'\n{IYellow}INFORMAÇÕES DO USUÁRIO PELO GLIVE{NC}\n'
         if info_list[1] != 'Não encontrado':
             for k,v in info_list[1].items():
                 if k == 'globoId' or k == 'legacyUserId' or k == 'email' or\
                 k == 'username' or k == 'fullName' or k == 'docNumber' or\
                 k == 'status' or k == 'createdAt' or k == 'updatedAt' or\
-                k == 'phones' or k == 'originService':
+                k == 'phones' or k == 'originService' or k == 'globocomEmail' or\
+                k == 'globomailEmail' or k == 'alternativeEmail' or k == 'gender' or\
+                k == 'docType' or k == 'contact' or k == 'birthDate' or\
+                k == 'address' or k == 'optinGlobo' or k == 'blockReason' or\
+                k == 'underageInfo' or k == 'optinGlobo' or k == 'blockReason':
                     output += f'{IBlue}{k}{NC}: {IGreen}{v}{NC}\n'
-                # Include address informations in resumed output
-#                elif k == 'address':
-#                    output += f'{IBlue}{k}{NC}:\n\
-#                                \r    {IBlue}city{NC}: {IGreen}{v["city"]["name"]}{NC}\n\
-#                                \r    {IBlue}state{NC}: {IGreen}{v["state"]["name"]}{NC}\n\
-#                                \r    {IBlue}country{NC}: {IGreen}{v["country"]["name"]}{NC}\n'
         else:
             output += f'{IRed}{info_list[1]}{NC}\n'
         if service == None and info_list[2] != 'Não encontrado':
-            output += f'\n{IYellow}INFORMAÇÕES DETALHADAS DOS PRINCIPAIS SERVIÇOS DO USUÁRIO PELO GLIVE{NC}\n'
+            output += f'\n{IYellow}INFORMAÇÕES DETALHADAS DOS SERVIÇOS QUE IMPEDEM A EXCLUSÃO DO USUÁRIO{NC}\n'
             srvc_list = []
             for srvc in info_list[2]:
-                if 'globoplay assinantes' in srvc["description"].lower() or 'premiere' in srvc["description"].lower() or \
-                    'combate' in srvc["description"].lower() or 'valor' in srvc["description"].lower() or \
-                    'telecine' in srvc["description"].lower() or 'cartola pro' in srvc["description"].lower() or \
-                    'o globo - assinante' in srvc["description"].lower() or 'assinante' in srvc["description"].lower() or \
-                    'globomail' in srvc["description"].lower() or 'sexy' in srvc["description"].lower() or \
-                    'philos' in srvc["description"].lower() or 'globosatplay' in srvc["description"].lower() or \
-                    'família' in srvc["description"].lower() or 'cartola fc' in srvc["description"].lower() or \
-                    'globoplay mais canais' in srvc["description"].lower():
-                    srvc_list.append(srvc)
+                #if 'globoplay assinantes' in srvc["description"].lower() or 'premiere' in srvc["description"].lower() or \
+                #    'combate' in srvc["description"].lower() or 'valor' in srvc["description"].lower() or \
+                #    'telecine' in srvc["description"].lower() or 'cartola pro' in srvc["description"].lower() or \
+                #    'o globo - assinante' in srvc["description"].lower() or 'assinante' in srvc["description"].lower() or \
+                #    'globomail' in srvc["description"].lower() or 'sexy' in srvc["description"].lower() or \
+                #    'philos' in srvc["description"].lower() or 'globosatplay' in srvc["description"].lower() or \
+                #    'família' in srvc["description"].lower() or 'cartola fc' in srvc["description"].lower() or \
+                #    'globoplay mais canais' in srvc["description"].lower():
+                for svc in servicespreventuserdeletion:
+                    if srvc["serviceId"] == svc:
+                        srvc_list.append(srvc)
+                if srvc in srvc_list:          
                     for k, v in srvc.items():
                         output += f'{IBlue}{k}{NC}: {IGreen}{v}{NC}\n'
                     output += f'\n'
             if srvc_list == []:
-                output += f'{IRed}Não foi encontrado senhum serviço principal de assinante{NC}\n'
+                output += f'{IRed}Não foi encontrado senhum serviço que impeça sua exclusão{NC}\n'
         elif info_list[2] != 'Não encontrado':
             output += f'\n{IYellow}INFORMAÇÕES DETALHADAS DOS SERVIÇOS DO USUÁRIO PELO GLIVE COM A STRING {ICyan}\"{service}\" {IYellow}NA DESCRIÇÃO DO SERVIÇO{NC}\n'
             srvc_list = []
@@ -139,6 +155,9 @@ def output(info_list, resume = False, service = None):
                 output += f'\n'
         if srvc_list == []:
             output += f'{IRed}Não foi encontrado senhum serviço com a string \"{service}\" {IYellow}na descrição do serviço{NC}\n'
+    elif data_only:
+        output += f'\n{IYellow}INFORMAÇÕES DO USUÁRIO PELO GLIVE{NC}\n'
+        output += f'{json.dumps(info_list[1], indent=2, ensure_ascii=False)}\n'
     else:
         output += f'\n{IYellow}INFORMAÇÕES DO USUÁRIO PELO GLIVE{NC}\n'
         output += f'{json.dumps(info_list[1], indent=2, ensure_ascii=False)}\n'
@@ -168,7 +187,7 @@ def get_info():
         legacy_id = glive_info_dict['legacyUserId']
         url_services = f'http://vendas-api.globoi.com:80/vendas-api/usuarios/{legacy_id}/servicos'
         services_list = loading_info(url_services, header)
-        detailed_services_list = loading_info(url_detailed_services, header)
+        detailed_services_list = loading_info(f'http://be.glive.globoi.com/v2/users/{legacy_id}/services', header)
         for service in services_list:
             i = services_list.index(service) # to get index of service in list
             detailed_services_list[i]['description'] = service['descricao']
@@ -179,6 +198,3 @@ def get_info():
 
 if __name__ == '__main__':
     main()
-
-
-
