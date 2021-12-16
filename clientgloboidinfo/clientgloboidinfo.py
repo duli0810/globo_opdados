@@ -132,7 +132,7 @@ def output(info_list, resume = False, service = None, data_only = None):
                         output += f'{IBlue}{k}{NC}: {IGreen}{v}{NC}\n'
                     output += f'\n'
             if srvc_list == []:
-                output += f'{IRed}Não foi encontrado senhum serviço que impeça sua exclusão{NC}\n'
+                output += f'{IRed}Não foi encontrado nenhum serviço que impeça sua exclusão{NC}\n'
         elif info_list[2] != 'Não encontrado':
             output += f'\n{IYellow}INFORMAÇÕES DETALHADAS DOS SERVIÇOS DO USUÁRIO PELO GLIVE COM A STRING {ICyan}\"{service}\" {IYellow}NA DESCRIÇÃO DO SERVIÇO{NC}\n'
             srvc_list = []

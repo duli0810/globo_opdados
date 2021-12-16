@@ -19,8 +19,8 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 
 ## Scripts para Ajudar no Troubleshoot de Incidentes e Requisições
 
-* clientgloboidinfo
->É utilizado para trazer as infromações de cadastro de usuários no Glive, bem como o status no integrador (eva-int) e as infromações dos ids de serviço provisionados.
+* clientgloboidinfo (**.sh** e **.py**)
+>É utilizado para trazer as infromações de cadastro de usuários no Glive, bem como o status no integrador (eva-int) e as infromações dos ids de serviço provisionados. Utilizando o **.py** temos opções como parametros que ajudam a filtrar os serviços buscando por uma string em suas descrições. Temos, também, o parametro ```-r``` ou ```--resume``` que traz as mesmas infromações anteriores, porém exibindo apenas os serviços que impedem o usuário buscado de ter seu cadastro excluído do Glive.
 
 * checkglbidservices
 >É utilizado para trazer as infromações dos ids de serviço provisionados de um usuário cadastrado no Glive. 
@@ -29,7 +29,7 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 >É utilizado para efetuar buscas, através do comando ```zgrep``` em arquivos de log compactados do Glive.
 
 * checkfamily
->É utilizado para trazer as infromações de família na **family-api** de um usuário cadastrado no Glive.
+>É utilizado para trazer as infromações de família na **family-api** de um usuário cadastrado no Glive e também aplicar WAs pertinentes.
 
 * rmglbid
 >É utilizado para trazer as infromações de família na **frelationshoip-manager** de um usuário cadastrado no Glive e também executar o contorno caso seja identificado alguma inconsistência.
