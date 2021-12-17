@@ -150,17 +150,28 @@ techtudo_fe2="techtudo-v2-prod-fe-2.cmal22fe-154.cp.globoi.com"
 techtudo_fe3="techtudo-v2-prod-fe-3.cmaq22fe-151.cp.globoi.com"
 techtudo_reals=("$techtudo_fe1" "$techtudo_fe2" "$techtudo_fe3")
 
-# vendas_plataforma (centraldeajuda)
-vendas_plataforma_fe1="vendas-plataforma-prod-fe-1.cmah22fe-154.cp.globoi.com"
-vendas_plataforma_fe2="vendas-plataforma-prod-fe-2.cmal22fe-155.cp.globoi.com"
-vendas_plataforma_fe3="vendas-plataforma-prod-fe-3.cmaq22fe-152.cp.globoi.com"
-vendas_plataforma_reals=("$vendas_plataforma_fe1" "$vendas_plataforma_fe2" "$vendas_plataforma_fe3")
+# vendas_plataforma (centraldeajuda) MIGRADO PARA FARM REDIRECT2
+#vendas_plataforma_fe1="vendas-plataforma-prod-fe-1.cmah22fe-154.cp.globoi.com"
+#vendas_plataforma_fe2="vendas-plataforma-prod-fe-2.cmal22fe-155.cp.globoi.com"
+#vendas_plataforma_fe3="vendas-plataforma-prod-fe-3.cmaq22fe-152.cp.globoi.com"
+#vendas_plataforma_reals=("$vendas_plataforma_fe1" "$vendas_plataforma_fe2" "$vendas_plataforma_fe3")
 
 # edg2 reals (revista galileu | revista globorural | revista pegn )
 edg2_fe1="editoraglobo2-prod-fe-1.cmah22fe-160.cp.globoi.com"
 edg2_fe2="editoraglobo2-prod-fe-2.cmal22fe-153.cp.globoi.com"
 edg2_fe3="editoraglobo2-prod-fe-3.cmaq22fe-158.cp.globoi.com"
 edg2_reals=("$edg2_fe1" "$edg2_fe2" "$edg2_fe3")
+
+# Farm redirect2.globo.com
+redirect2_fe1="asra11mp03lf15.globoi.com"
+redirect2_fe2="asra11mp03lf16.globoi.com"
+redirect2_fe3="asra01mp03lf16.globoi.com"
+redirect2_fe4="asra01mp03lf15.globoi.com"
+redirect2_fe5="cmah21mp02lf08.globoi.com"
+redirect2_fe6="cmal21mp02lf07.globoi.com"
+redirect2_fe7="cmah21mp02lf07.globoi.com"
+redirect2_fe8="cmal21mp02lf08.globoi.com"
+redirect2_reals=("$redirect2_fe1" "$redirect2_fe2" "$redirect2_fe3" "$redirect2_fe4" "$redirect2_fe5" "$redirect2_fe6" "$redirect2_fe7" "$redirect2_fe8")
 
 
 # Creating array with all inputs
@@ -179,7 +190,7 @@ Usage: $(basename "$0") <Project Name>
                       vogue $NC|$ICyan casavogue $NC|$ICyan multishow $NC|$ICyan techtudo $NC|$ICyan 
                       revistaquem $NC|$ICyan centraldeajuda $NC|$ICyan revistagalileu $NC|$ICyan
                       revistagloborural $NC|$ICyan revistapegn $NC|$ICyan revistacrescer $NC|$ICyan 
-                      epocanegocios $NC|$ICyan revistaglamour $NC|$ICyan epoca $NC]
+                      epocanegocios $NC|$ICyan revistaglamour $NC|$ICyan epoca $NC|$IYellow redirect2 $NC]
     -h, --help      display this help and exit
 
     Usage Examples:
@@ -206,8 +217,9 @@ Usage: $(basename "$0") <Project Name>
         $(basename "$0")$ICyan epocanegocios $NC
         $(basename "$0")$ICyan revistaglamour $NC
         $(basename "$0")$ICyan epoca $NC
+        $(basename "$0")$IYellow redirect2 $NC
 "
-
+#'sudo /etc/init.d/farmredirect-nginx-fe restart'
 # Inform the project to check reals
 function checkreals {
     local color host_project
@@ -225,13 +237,14 @@ function checkreals {
     [[ "$project" == "casavogue" ]] && project="edg3"
     [[ "$project" == "multishow" ]] && project="gsat4"
     [[ "$project" == "techtudo" ]] && project="techtudo_v2"
-    [[ "$project" == "centraldeajuda" ]] && project="vendas_plataforma"
+    [[ "$project" == "centraldeajuda" ]] && project="farmredirect"
     [[ "$project" == "revistagalileu" ]] && project="edg2"
     [[ "$project" == "revistagloborural" ]] && project="edg2"
     [[ "$project" == "revistapegn" ]] && project="edg2"
     [[ "$project" == "epocanegocios" ]] && project="edg2"
     [[ "$project" == "revistaglamour" ]] && project="edg3"
     [[ "$project" == "epoca" ]] && project="edg2"
+    [[ "$project" == "redirect2" ]] && project="farmredirect"
     if [[ "$project" == "globoesporte" ]]; then
         active_color="$(curl -s http://ge.globo.com/healthcheck.html | awk '{print $2}')"
     else
@@ -276,7 +289,7 @@ function checkreals {
         echo
     elif [[ "$project" == "gsat3" || "$project" == "home" || "$project" == "redeglobo" || "$project" == "vendas_assine" || "$project" == "gsat5" || \
         "$project" == "edg4" || "$project" == "vignette" || "$project" == "wordpress_legado" || "$project" == "edg3" || "$project" == "gsat4" || \
-        "$project" == "techtudo_v2" || "$project" == "vendas_plataforma" || "$project" == "edg2" ]]; then
+        "$project" == "techtudo_v2" || "$project" == "vendas_plataforma" || "$project" == "edg2" || "$project" == "farmredirect" ]]; then
         [[ "$project" == "gsat3" ]] && project_reals=("${gsat3_reals[@]}")
         [[ "$project" == "home" ]] && project_reals=("${home_reals[@]}")
         [[ "$project" == "redeglobo" ]] && project_reals=("${redeglobo_reals[@]}")
@@ -290,6 +303,7 @@ function checkreals {
         [[ "$project" == "techtudo_v2" ]] && project_reals=("${techtudo_reals[@]}")
         [[ "$project" == "vendas_plataforma" ]] && project_reals=("${vendas_plataforma_reals[@]}")
         [[ "$project" == "edg2" ]] && project_reals=("${edg2_reals[@]}")
+        [[ "$project" == "farmredirect" ]] && project_reals=("${redirect2_reals[@]}")
         for host_project in "${project_reals[@]}"
         do
             if ping -c 3 $host_project > /dev/null; then
@@ -343,11 +357,16 @@ checkreals "${PARAMETERS[0]}"
 i=0
 while [ i != 0 ]
 do
-    echo -e "What do you want to do? ( 1 ) configtest   ( 2 ) reload   ( q ) to quit"
+    if [[ $project == "farmredirect" ]]
+        then
+        echo -e "What do you want to do? ( 1 ) test on a single server    ( 2 ) apply on all servers   ( q ) to quit"
+    else
+        echo -e "What do you want to do? ( 1 ) configtest   ( 2 ) reload   ( q ) to quit"
+    fi
     read option
-    while [[ "$option" != "1" && "$option" != "2" && "$option" != "3" && "$option" != "q" ]]
+    while [[ "$option" != "1" && "$option" != "2" && "$option" != "q" ]]
     do
-      echo -e ""$IRed"Invalid option!"$NC" Try again (1, 2, 3) or ( q ) to quit: "
+      echo -e ""$IRed"Invalid option!"$NC" Try again (1, 2) or ( q ) to quit: "
       read option
     done
     [[ "$option" == "q" ]] && exit 0
@@ -357,34 +376,56 @@ do
 
     case $option in
     1) #configtest - Tests the syntax of the project servers nginx/apache configuration files
-        echo -e "Running the $IYellow\"configtest\"$NC command to check the syntax of the nginx/apache configuration file
-                 \ron the server: $IYellow"${project_reals[0]}"$NC ..."
-        actionserver "${project_reals[0]}" "configtest"
-        echo
+        if [[ $project == "farmredirect" ]]
+            then
+            echo -e "Testing commands in $IYellow$host_project$NC:"
+            echo -e "- Running$IBlue puppet-check$NC:"
+            ssh -t "$LOGNAME"@"${project_reals[0]}" "sudo /opt/local/bin/puppet-check"
+            echo -e "- Running$IBlue puppet-setup$NC:"
+            ssh -t "$LOGNAME"@"${project_reals[0]}" "sudo /opt/local/bin/puppet-setup"
+            echo -e "- Running reload do nginx:"
+            ssh -t "$LOGNAME"@"${project_reals[0]}" "sudo /etc/init.d/"$project"-nginx-fe reload"
+            echo -e "- Testing in local with wget command:"
+            echo -e "Enter source domain:"
+            read source_domain
+            echo -e "Enter path of source URL. Ex /algumacoisa :"
+            read path
+            ssh -t "$LOGNAME"@"${project_reals[0]}" "wget -O /dev/null  --server-response http://localhost:8081$path --header=\"Host:$source_domain\" --max-redirect 0"
+            echo
+        else
+            echo -e "\nRunning the $IYellow\"configtest\"$NC command to check the syntax of the nginx/apache configuration file
+                     \ron the server: $IYellow"${project_reals[0]}"$NC ...\n"
+            actionserver "${project_reals[0]}" "configtest"
+            echo
+        fi
         ;;
 
     2) #reload - Performs reload on the nginx/apache service of the project servers
-        echo -e "Running the $IYellow\"reload\"$NC command to apply the
-        \rchanges in nginx service on the servers: "
-        for host_project in "${project_reals[@]}"
-        do
-            host_project_from_ssh="$(ssh "$LOGNAME"@"$host_project" "hostname")"
-            echo -e "$IYellow"$host_project_from_ssh"$NC:"
-            actionserver "$host_project" "reload"
-        done
+        if [[ $project == "farmredirect" ]]
+            then
+            for host_project in "${project_reals[@]}"
+            do
+                if [[ $host_project != ${project_reals[0]} ]]
+                    then
+                    echo -e "Running$IBlue puppet-setup$NC in $IYellow$host_project$NC:"
+                    ssh -t "$LOGNAME"@"$host_project" "sudo /opt/local/bin/puppet-setup"
+                fi
+            done
+            echo -e "\nRunning the $IYellow\"reload\"$NC command to apply the changes in nginx service on the servers: \n"
+            for host_project in "${project_reals[@]}"
+            do    
+                echo -e "$IYellow$host_project$NC:"
+                ssh -t "$LOGNAME"@"$host_project" "sudo /etc/init.d/"$project"-nginx-fe reload"
+            done
+        else
+            echo -e "\nRunning the $IYellow\"reload\"$NC command to apply the changes in nginx service on the servers: \n"
+            for host_project in "${project_reals[@]}"
+            do
+                echo -e "$IYellow$host_project$NC:"
+                actionserver "$host_project" "reload"
+            done
+        fi
         echo
-#        ;;
-#    
-#    3) #graceful - Performs graceful on the apache service of the project servers
-#        echo -e "Running the $IYellow\"graceful\"$NC command to apply the
-#        \rchanges in nginx service on the servers: "
-#        for host_project in "${project_reals[@]}"
-#        do
-#            host_project_from_ssh="$(ssh "$LOGNAME"@"$host_project" "graceful")"
-#            echo -e "$IYellow"$host_project_from_ssh"$NC:"
-#            actionserver "$host_project" "graceful"
-#        done
-#        echo
     esac
 done
 ####################

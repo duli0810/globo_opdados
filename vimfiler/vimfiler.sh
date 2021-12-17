@@ -53,7 +53,7 @@ edg3_casavogue="/mnt/projetos/deploy-fe/edg3/redirect-casavogue.conf"
 multishow="/mnt/projetos/deploy-fe/gsat4/redirect-multishow.conf"
 techtudo="/mnt/projetos/htdocs/techtudo_v2/nginx/redirect-techtudo.inc"
 edg4_revistaquem="/mnt/projetos/deploy-fe/edg4/redirect-revistaquem.conf"
-centraldeajuda="/mnt/projetos/deploy-fe/vendas_plataforma/redirect.conf"
+#centraldeajuda="/mnt/projetos/deploy-fe/vendas_plataforma/redirect.conf"
 edg2_galileu="/mnt/projetos/deploy-fe/edg2/redirect-galileu.conf"
 edg2_globorural="/mnt/projetos/deploy-fe/edg2/redirect-globorural.conf"
 edg2_revistapegn="/mnt/projetos/deploy-fe/edg2/redirect-revistapegn.conf"
@@ -75,10 +75,13 @@ Usage: $(basename "$0") <Project Name>
     <Project Name>  [$ICyan gshow $NC|$ICyan g1 $NC|$ICyan ge $NC|$ICyan gsat3 $NC|$ICyan home $NC|$ICyan redeglobo $NC|$ICyan 
                       casaejardim $NC|$ICyan assine $NC|$ICyan gnt $NC|$ICyan vignette $NC|$ICyan wpg1 $NC|$ICyan
                       vogue $NC|$ICyan casavogue $NC|$ICyan multishow $NC|$ICyan techtudo $NC|$ICyan 
-                      revistaquem $NC|$ICyan centraldeajuda $NC|$ICyan revistagalileu $NC|$ICyan
+                      revistaquem $NC|$ICyan revistagalileu $NC|$ICyan
                       revistagloborural $NC|$ICyan revistapegn $NC|$ICyan revistacrescer $NC|$ICyan revistaglamour $NC|$ICyan 
                       epoca $NC]
     -h, --help      display this help and exit
+
+    OBS: 
+      - O$ICyan centraldeajuda.globo.com $NC foi migrado para a farm$IYellow rdirect2$NC!
 
     Usage Examples:
         $(basename "$0")$ICyan g1 $NC
@@ -88,7 +91,6 @@ Usage: $(basename "$0") <Project Name>
         $(basename "$0")$ICyan redeglobo $NC
         $(basename "$0")$ICyan assine $NC
         $(basename "$0")$ICyan gnt $NC
-        $(basename "$0")$ICyan casaejardim $NC
         $(basename "$0")$ICyan vignette $NC
         $(basename "$0")$ICyan wpg1 $NC
         $(basename "$0")$ICyan vogue $NC
