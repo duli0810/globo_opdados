@@ -161,8 +161,6 @@ TOKEN_BS=$(curl -sS --location --request POST 'https://accounts.backstage.globoi
 			--data-urlencode 'grant_type=client_credentials' | jq -r '.access_token')
 
 function read_option {
-	EXEC_ECHO=$1
-	EXEC_CMD=$2
 	read option
     while [[ "$option" != "s" && "$option" != "n" ]]
     do
@@ -171,8 +169,8 @@ function read_option {
     done
 	if [[ $option == "s" ]]
 		then
-		echo -e $EXEC_ECHO
-		$EXEC_CMD
+		echo -e "\nExecutando o comando:\n$1\n"
+		eval "$1"
 	else
 		echo -e "Nenhuma alteração foi realizada!"
 		exit 0
@@ -233,19 +231,19 @@ function check_family {
 function create_family {
 	SIZE_FAMILY="${PARAMETERS[1]}"
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para criação da familia do titular, $IYellow$GLBID$NC, com direito a $IYellow$SIZE_FAMILY$NC dependentes. \nAntes de executar esse comando, é necessário confirmar que o usuário é realmente um assinante com direito a dependentes e quantos dependentes podem ser incluídos na família. \nEsse WA pode transformar um dependente em titular, conferir os dados antes de executá-lo. \nTem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"
-	read_option "Executando o comando:\ncurl -X POST -H \"Content-Type: application/json\" https://globoid-family-api.backstage.globoi.com/v1/user/family -d \"{'size': $SIZE_FAMILY, 'OwnerId': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\" \n" "curl -X POST -H \"Content-Type: application/json\" https://globoid-family-api.backstage.globoi.com/v1/user/family -d \"{'size': $SIZE_FAMILY, 'OwnerId': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\""
+	read_option "curl -X POST -H \"Content-Type: application/json\" https://globoid-family-api.backstage.globoi.com/v1/user/family -d \"{'size': $SIZE_FAMILY, 'OwnerId': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\""
 }
 
 function create_relation {
 	GLBID_OWNER="${PARAMETERS[1]}"
 	GLBID_DEPENDENT="${PARAMETERS[2]}"
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para criação da relação entre o titular, $IYellow$GLBID_OWNER$NC, e o dependente, $IYellow$GLBID_DEPENDENT$NC. $IYellow\nEssa operação não pode ser facilmente desfeita! Conferir globoids do titular e dependente.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"	
-	read_option "Executando o comando:\ncurl -X POST -H \"Content-Type: application/json\" https://globoid-family-api.backstage.globoi.com/internal/granted/relation -d \"{'ownerID': $GLBID_OWNER, 'grantedID': $GLBID_DEPENDENT}\" -H \"Authorization: Bearer $TOKEN_BS\" \n" "curl -X POST -H \"Content-Type: application/json\" https://globoid-family-api.backstage.globoi.com/internal/granted/relation -d \"{'ownerID': $GLBID_OWNER, 'grantedID': $GLBID_DEPENDENT}\" -H \"Authorization: Bearer $TOKEN_BS\""
+	read_option "curl -X POST -H 'Content-Type: application/json' https://globoid-family-api.backstage.globoi.com/internal/granted/relation -d '{\"ownerID\": \"$GLBID_OWNER\", \"grantedID\": \"$GLBID_DEPENDENT\"}' -H 'Authorization: Bearer $TOKEN_BS'"
 }
 
 function update_services {
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para atualizar serviços de titular, $IYellow$GLBID$NC, em seus dependentes. $IYellow\nConferir os serviços do titular antes de chamar essa rota, pois ela replicará os serviços do titular para seus dependentes.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"
-	read_option "Executando o comando:\ncurl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header \"Content-Type: application/json\" --data-raw \"{'globoid': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\" \n" "curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header \"Content-Type: application/json\" --data-raw \"{'globoid': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\""
+	read_option "curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header \"Content-Type: application/json\" --data-raw \"{'globoid': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\""
 }
 
 # Main program
