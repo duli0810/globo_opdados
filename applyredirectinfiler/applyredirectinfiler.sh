@@ -340,6 +340,34 @@ function actionserver {
     fi
 }
 
+function parse_url {
+    # Extract the protocol (includes trailing "://").
+    PARSED_PROTO="$(echo $1 | sed -nr 's,^(.*://).*,\1,p')"
+    # Remove the protocol from the URL.
+    PARSED_URL="$(echo ${1/$PARSED_PROTO/})"
+    # Extract the user (includes trailing "@").
+    PARSED_USER="$(echo $PARSED_URL | sed -nr 's,^(.*@).*,\1,p')"
+    # Remove the user from the URL.
+    PARSED_URL="$(echo ${PARSED_URL/$PARSED_USER/})"
+    # Extract the port (includes leading ":").
+    PARSED_PORT="$(echo $PARSED_URL | sed -nr 's,.*(:[0-9]+).*,\1,p')"
+    # Remove the port from the URL.
+    PARSED_URL="$(echo ${PARSED_URL/$PARSED_PORT/})"
+    # Extract the path (includes leading "/" or ":").
+    PARSED_PATH="$(echo $PARSED_URL | sed -nr 's,[^/:]*([/:].*),\1,p')"
+    # Remove the path from the URL.
+    PARSED_HOST="$(echo ${PARSED_URL/$PARSED_PATH/})"
+}
+
+function test_url {
+    parse_url $1
+    HOST_PROJECT=$2
+    echo -e "\nRunning the command:\n"
+    echo -e ""$IYellow"ssh -t $LOGNAME@$HOST_PROJECT \"wget -O /dev/null  --server-response http://localhost:8081$PARSED_PATH --header='Host:$PARSED_HOST' --max-redirect 0\"\n$NC"
+    ssh -t "$LOGNAME"@"$HOST_PROJECT" "wget -O /dev/null  --server-response http://localhost:8081$PARSED_PATH --header='Host:$PARSED_HOST' --max-redirect 0"
+    echo
+}
+
 # Show help message when needed
 while echo "${PARAMETERS[0]}" | egrep -q '(^$|^\-h$|^\-{0,}help$)' || [[ ${#PARAMETERS[@]} < "1" ]]
 do
@@ -350,6 +378,7 @@ do
     fi
     exit 0
 done
+
 ################
 # Main Program #
 ################
@@ -386,12 +415,9 @@ do
             echo -e "- Running reload do nginx:"
             ssh -t "$LOGNAME"@"${project_reals[0]}" "sudo /etc/init.d/"$project"-nginx-fe reload"
             echo -e "- Testing in local with wget command:"
-            echo -e "Enter source domain:"
-            read source_domain
-            echo -e "Enter path of source URL. Ex /algumacoisa :"
-            read path
-            ssh -t "$LOGNAME"@"${project_reals[0]}" "wget -O /dev/null  --server-response http://localhost:8081$path --header=\"Host:$source_domain\" --max-redirect 0"
-            echo
+            echo -e "\nEnter source URL:"
+            read URL
+            test_url $URL ${project_reals[0]}
         else
             echo -e "\nRunning the $IYellow\"configtest\"$NC command to check the syntax of the nginx/apache configuration file
                      \ron the server: $IYellow"${project_reals[0]}"$NC ...\n"
@@ -416,6 +442,13 @@ do
             do    
                 echo -e "$IYellow$host_project$NC:"
                 ssh -t "$LOGNAME"@"$host_project" "sudo /etc/init.d/"$project"-nginx-fe reload"
+            done
+            echo -e "Testing in local with wget command in the projet servers:"
+            echo -e "Enter source URL:"
+            read URL
+            for host_project in "${project_reals[@]}"
+            do
+                test_url $URL $host_project
             done
         else
             echo -e "\nRunning the $IYellow\"reload\"$NC command to apply the changes in nginx service on the servers: \n"
