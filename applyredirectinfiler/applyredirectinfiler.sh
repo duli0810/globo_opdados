@@ -188,7 +188,7 @@ Usage: $(basename "$0") <Project Name>
     <Project Name>  [$ICyan gshow $NC|$ICyan g1 $NC|$ICyan ge $NC|$ICyan gsat3 $NC|$ICyan home $NC|$ICyan redeglobo $NC|$ICyan 
                       casaejardim $NC|$ICyan assine $NC|$ICyan gnt $NC|$ICyan vignette $NC|$ICyan wpg1 $NC|$ICyan
                       vogue $NC|$ICyan casavogue $NC|$ICyan multishow $NC|$ICyan techtudo $NC|$ICyan 
-                      revistaquem $NC|$ICyan centraldeajuda $NC|$ICyan revistagalileu $NC|$ICyan
+                      revistaquem $NC|$IYellow centraldeajuda $NC|$ICyan revistagalileu $NC|$ICyan
                       revistagloborural $NC|$ICyan revistapegn $NC|$ICyan revistacrescer $NC|$ICyan 
                       epocanegocios $NC|$ICyan revistaglamour $NC|$ICyan epoca $NC|$IYellow redirect2 $NC]
     -h, --help      display this help and exit
@@ -209,7 +209,7 @@ Usage: $(basename "$0") <Project Name>
         $(basename "$0")$ICyan multishow $NC
         $(basename "$0")$ICyan techtudo $NC
         $(basename "$0")$ICyan revistaquem $NC
-        $(basename "$0")$ICyan centraldeajuda $NC
+        $(basename "$0")$IYellow centraldeajuda $NC
         $(basename "$0")$ICyan revistagalileu $NC
         $(basename "$0")$ICyan revistagloborural $NC
         $(basename "$0")$ICyan revistapegn $NC
