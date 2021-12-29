@@ -50,7 +50,7 @@ done
 # 	  Antes de executar esse comando, é necessário confirmar que o usuário é realmente um assinante com direito a dependentes e quantos dependentes podem ser incluídos na família (o tamanho máximo).
 # 	  Atenção! a rota abaixo pode transformar um dependente em titular, conferir os dados antes de chamá-la. 
 #
-# 	  curl -X POST -H "Content-Type: application/json" https://globoid-family-api.backstage.globoi.com/v1/user/family -d "{'size': $SIZE_FAMILY, 'OwnerId': $GLBID_OWNER}" -H "Authorization: Bearer $TOKEN_BS" -v
+# 	  curl -X POST -H "Content-Type: application/json" https://globoid-family-api.backstage.globoi.com/v1/user/family -d '{"OwnerId": "$GLBID_OWNER", "size": $SIZE_FAMILY}' -H "Authorization: Bearer $TOKEN_BS" -v
 # 
 # 
 # 3 – Confirme a família do titular na rota /owners para ver se o dependente realmente não está na família.
@@ -169,7 +169,7 @@ function read_option {
     done
 	if [[ $option == "s" ]]
 		then
-		echo -e "\nExecutando o comando:\n$1\n"
+		echo -e "$IYellow\nExecutando o comando:$NC$IBlue\n$1\n$NC"
 		eval "$1"
 	else
 		echo -e "Nenhuma alteração foi realizada!"
@@ -231,19 +231,19 @@ function check_family {
 function create_family {
 	SIZE_FAMILY="${PARAMETERS[1]}"
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para criação da familia do titular, $IYellow$GLBID$NC, com direito a $IYellow$SIZE_FAMILY$NC dependentes. \nAntes de executar esse comando, é necessário confirmar que o usuário é realmente um assinante com direito a dependentes e quantos dependentes podem ser incluídos na família. \nEsse WA pode transformar um dependente em titular, conferir os dados antes de executá-lo. \nTem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"
-	read_option "curl -X POST -H \"Content-Type: application/json\" https://globoid-family-api.backstage.globoi.com/v1/user/family -d \"{'size': $SIZE_FAMILY, 'OwnerId': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\""
+	read_option "curl -X POST -H \"Content-Type: application/json\" https://globoid-family-api.backstage.globoi.com/v1/user/family -d '{\"OwnerId\": \"$GLBID\", \"size\": $SIZE_FAMILY}' -H \"Authorization: Bearer $TOKEN_BS\" -v"
 }
 
 function create_relation {
 	GLBID_OWNER="${PARAMETERS[1]}"
 	GLBID_DEPENDENT="${PARAMETERS[2]}"
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para criação da relação entre o titular, $IYellow$GLBID_OWNER$NC, e o dependente, $IYellow$GLBID_DEPENDENT$NC. $IYellow\nEssa operação não pode ser facilmente desfeita! Conferir globoids do titular e dependente.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"	
-	read_option "curl -X POST -H 'Content-Type: application/json' https://globoid-family-api.backstage.globoi.com/internal/granted/relation -d '{\"ownerID\": \"$GLBID_OWNER\", \"grantedID\": \"$GLBID_DEPENDENT\"}' -H 'Authorization: Bearer $TOKEN_BS'"
+	read_option "curl -X POST -H 'Content-Type: application/json' https://globoid-family-api.backstage.globoi.com/internal/granted/relation -d '{\"ownerID\": \"$GLBID_OWNER\", \"grantedID\": \"$GLBID_DEPENDENT\"}' -H 'Authorization: Bearer $TOKEN_BS' -v"
 }
 
 function update_services {
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para atualizar serviços de titular, $IYellow$GLBID$NC, em seus dependentes. $IYellow\nConferir os serviços do titular antes de chamar essa rota, pois ela replicará os serviços do titular para seus dependentes.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"
-	read_option "curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header \"Content-Type: application/json\" --data-raw \"{'globoid': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\""
+	read_option "curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header \"Content-Type: application/json\" --data-raw \"{'globoid': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\" -v"
 }
 
 # Main program

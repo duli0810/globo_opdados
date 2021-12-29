@@ -27,6 +27,8 @@ USAGE_MSG="
 	Script para verificar se o usuário é titular de uma familia na app	
 	globoid-relationship-manager e remove-lo caso seja uma inconsistencia.
 
+	KB0019910 - https://globoservice.service-now.com/kb_view.do?sysparm_article=KB0019910
+
 	Usage: $(basename "$0") <options> [<e-mail> | <globoid>]
 
 	Options:
