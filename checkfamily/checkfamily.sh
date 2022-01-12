@@ -186,25 +186,31 @@ function check_family {
 
 	# Get family type user
 	USER_TYPE=$(curl -sS --location --request GET https://globoid-family-api.backstage.globoi.com/v1/user/type/$GLBID -H 'Authorization: Bearer '$TOKEN_BS'' | jq -r '.type')
+	echo -e "$IYellow\nExecutando o seguinte comando para verificar o tipo de usuário:$NC"
+	echo -e "curl -sS --location --request GET https://globoid-family-api.backstage.globoi.com/v1/user/type/$GLBID -H 'Authorization: Bearer '$TOKEN_BS'' | jq -r '.type'"
 
 	# Get family from owner user
 	if [[ "$USER_TYPE" == "owner" ]]
 		then
 		OWNER_FAMILY=$(curl -sS --location --request GET https://globoid-family-api.backstage.globoi.com/v1/user/family/owners/$GLBID -H 'Authorization: Bearer '$TOKEN_BS'' | jq -C '.')
 		echo -e "$IYellow\nO usuário $IBlue$EMAIL$IYellow, globoid $IBlue$GLBID$IYellow, é considerado$IBlue titular$IYellow da familia! $NC"
+		echo -e "$IYellow\nExecutando o seguinte comando para trazer as informaçÕes da família do usuário:$NC"
+		echo -e "curl -sS --location --request GET https://globoid-family-api.backstage.globoi.com/v1/user/family/owners/$GLBID -H 'Authorization: Bearer '$TOKEN_BS'' | jq -C '.'"
 		echo -e "\n$OWNER_FAMILY\n"
 	elif [[ "$USER_TYPE" == "granted" ]]
 		then
 		# Get owner family from dependent user
 		DEPENDENT_FAMILY=$(curl -sS --location --request GET https://globoid-family-api.backstage.globoi.com/v1/user/granteds/$GLBID -H 'Authorization: Bearer '$TOKEN_BS'' | jq -C '.')
-		echo -e "$IYellow\nO usuário $IBlue$EMAIL$IYellow, globoid $IBlue$GLBID$IYellow, é considerado$IBlue $USER_TYPE$IYellow, ou seja,$IBlue dependente$IYellow e seu titular é: $NC"
+		echo -e "$IYellow\nO usuário $IBlue$EMAIL$IYellow, globoid $IBlue$GLBID$IYellow, é considerado$IBlue $USER_TYPE$IYellow, ou seja,$IBlue dependente$IYellow.$NC"
+		echo -e "$IYellow\nExecutando o seguinte comando para trazer as informaçÕes da família do usuário:$NC"
+		echo -e "curl -sS --location --request GET https://globoid-family-api.backstage.globoi.com/v1/user/granteds/$GLBID -H 'Authorization: Bearer '$TOKEN_BS'' | jq -C '.'"
 		echo -e "$DEPENDENT_FAMILY\n"
 	else
 		echo -e "$IYellow\nO usuário $IBlue$EMAIL$IYellow, globoid $IBlue$GLBID$IYellow, é considerado$IBlue $USER_TYPE$IYellow!$NC\n"
 	fi
 	if [[ "$USER_TYPE" == "owner" || "$USER_TYPE" == "no-family"  ]]
 		then
-		echo -e ""$IYellow"SERVIÇOS DO USUÁRIO QUE PODEM IMPEDÍ-LO DE SE TORNAR DEPENDENTE"$NC""
+		echo -e ""$IYellow"SERVIÇOS DE ASSINANTE DO USUÁRIO QUE PODEM IMPEDÍ-LO DE SE TORNAR UM POSSíVEL DEPENDENTE"$NC""
 		index=0
 		output=()
 		for detailedservice in "${SERVICESDETAIL_LIST[@]}"

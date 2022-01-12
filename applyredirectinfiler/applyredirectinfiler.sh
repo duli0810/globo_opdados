@@ -194,6 +194,7 @@ Usage: $(basename "$0") <Project Name>
     -h, --help      display this help and exit
 
     Usage Examples:
+        $(basename "$0")$ICyan gshow $NC
         $(basename "$0")$ICyan g1 $NC
         $(basename "$0")$ICyan ge $NC
         $(basename "$0")$ICyan gsat3 $NC
