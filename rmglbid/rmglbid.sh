@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Script para verificar se o usuário
 # é titular de uma familia na app
 # globoid-relationship-manager e 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Segue abaixo novo link para trazer os dados do glive
 # curl -s eva-int.globoi.com/user/$GLBID

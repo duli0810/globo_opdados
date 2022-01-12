@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 # Funciona como comando para facilitar a edição dos arquivos
 # de configuracao de redirect no filer.
 # - permite escolher o projeto ao efetuar busca no filer:

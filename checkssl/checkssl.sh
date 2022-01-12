@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 # Funciona como comando para facilitar a checagem da data
 # de expiração do certificado SSL de uma URL.
 #

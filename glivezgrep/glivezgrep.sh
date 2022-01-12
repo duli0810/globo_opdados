@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 # Funciona como comando para facilitar a checagem da existencia
 # de logs do glive para um determinado usuário
 #

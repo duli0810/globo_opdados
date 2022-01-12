@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 # Funciona como comando para verificar erros de sintaxe
 # nos arquivos de configuracao de redirect e/ou aplicar
 # suas novas configurações, remotamente "over ssh" nos

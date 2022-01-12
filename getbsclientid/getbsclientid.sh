@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Script para pegar infromações sobre
 # backstage client id informado
 

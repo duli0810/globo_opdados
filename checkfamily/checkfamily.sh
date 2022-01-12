@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Funciona como comando para trazer informações da 
 # globoid-famaly-api de qualquer usuário cadastrado.
 # - permite aplicar WAs;

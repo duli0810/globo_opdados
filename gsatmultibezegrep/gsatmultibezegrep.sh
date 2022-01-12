@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 # Funciona como comando para facilitar a checagem da existencia
 # de logs de BE do Gsatmulti para descobrir qual conta de usuário
 # já estaria associada a operadora de um determinado cliente que 
