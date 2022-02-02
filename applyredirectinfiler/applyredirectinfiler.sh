@@ -98,9 +98,9 @@ home_reals=("$home_fe1" "$home_fe2" "$home_fe3" "$home_fe4" "$home_fe5" "$home_f
 
 # redeglobo reals
 redeglobo_fe1="redeglobo-prod-fe-1.cmah22fe-150.cp.globoi.com"
-#redeglobo_fe2="redeglobo-prod-fe-2.cmal22fe-151.cp.globoi.com"
+redeglobo_fe2="redeglobo-prod-fe-2.cmal22fe-151.cp.globoi.com"
 redeglobo_fe3="redeglobo-prod-fe-3.cmaq22fe-149.cp.globoi.com"
-redeglobo_reals=("$redeglobo_fe1" "$redeglobo_fe3")
+redeglobo_reals=("$redeglobo_fe1" "$redeglobo_fe2" "$redeglobo_fe3")
 
 # vendas assine reals
 assine_fe1="vendas-assine-prod-fe-1.cmah22fe-144.cp.globoi.com"
