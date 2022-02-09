@@ -78,25 +78,25 @@ Usage: $(basename "$0") <Text String> <Project Name>
     -h, --help      display this help and exit
 
     Usage Examples:
-        $(basename "$0") '\/rj' g1
-        $(basename "$0") '\/site' ge
-        $(basename "$0") '\/programa' gsat3
-        $(basename "$0") 'otextodesejado' home
-        $(basename "$0") 'otextodesejado' redeglobo
-        $(basename "$0") 'otextodesejado' assine
-        $(basename "$0") 'otextodesejado' gnt
-        $(basename "$0") 'otextodesejado' casaejardim
-        $(basename "$0") 'otextodesejado' vignette
-        $(basename "$0") 'otextodesejado' wpg1
-        $(basename "$0") 'otextodesejado' vogue
-        $(basename "$0") 'otextodesejado' casavogue
-        $(basename "$0") 'otextodesejado' multishow
-        $(basename "$0") 'otextodesejado' techtudo
-        $(basename "$0") 'otextodesejado' revistaquem
-        $(basename "$0") 'otextodesejado' centraldeajuda
-        $(basename "$0") 'otextodesejado' revistagalileu
-        $(basename "$0") 'otextodesejado' revistagloborural
-        $(basename "$0") 'otextodesejado' revistapegn
+        $(basename "$0") \"'/rj'\" g1
+        $(basename "$0") \"'/site'\" ge
+        $(basename "$0") \"'/programa'\" gsat3
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" home
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" redeglobo
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" assine
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" gnt
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" casaejardim
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" vignette
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" wpg1
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" vogue
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" casavogue
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" multishow
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" techtudo
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" revistaquem
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" centraldeajuda
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" revistagalileu
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" revistagloborural
+        $(basename "$0") \"'^rewrite \^otextodesejadocomregexounao'\" revistapegn
 "
 
 # Return the project chosen by the user setting the variable redirect_filer_path
