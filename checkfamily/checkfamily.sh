@@ -80,6 +80,11 @@ done
 # 	  curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header "Content-Type: application/json" --data-raw "{'globoid': $GLBID_OWNER}" -H "Authorization: Bearer $TOKEN_BS" -v
 #
 #
+# 7 - Remoção de familia 
+# Atenção! Essa rota nao irá remover a família caso o usuário possua serviços ATIVOS que concedam perfil OWNER no Family API. Caso a rota nao funcione, é necessário avaliar qual serviceID está forçando o usuário a ter a familia em questão
+# 
+# curl --location --request PUT 'https://be.globoid-family-api.globoi.com/v1/user/family/services' --header 'Content-Type: application/json' --data-raw '{"globoid": "$GLOBOID_ALVO"}'
+# 
 
 USAGE_MSG="
 	Utilizado para trazer as infromações de família na globoid-family-api de um usuário 
@@ -99,6 +104,7 @@ USAGE_MSG="
 					must be an integer.
     	-r, --create-relation           WA to create owner-dependent relationship.
 	-u, --update-services		WA to update services from owner to dependent.
+		-d, --delete-family				WA to delete family.
 
 	Usage Examples:
 		$(basename "$0") operacao.producao@ig.com
@@ -252,8 +258,13 @@ function update_services {
 	read_option "curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header \"Content-Type: application/json\" --data-raw \"{'globoid': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\" -v"
 }
 
+function delete_family {
+	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para deletar a família do suposto titular, $IYellow$GLBID$NC.\n Essa rota nao irá remover a família caso o usuário possua serviços ATIVOS que concedam perfil OWNER no Family API. Caso a rota nao funcione, é necessário avaliar qual serviceID está forçando o usuário a ter a familia em questão"
+	read_option "curl --location --request PUT 'https://be.globoid-family-api.globoi.com/v1/user/family/services' --header 'Content-Type: application/json' -data-raw '{\"globoid\": \"$GLBID\"}'"
+}
+
 # Main program
-if [[ 
+if [[
 		"${PARAMETERS[0]}" != "" && \
 		"${PARAMETERS[0]}" != "-h" && \
 		"${PARAMETERS[0]}" != "--help" && \
@@ -261,6 +272,8 @@ if [[
 		"${PARAMETERS[0]}" != "--create-family" && \
 		"${PARAMETERS[0]}" != "-r" && \
 		"${PARAMETERS[0]}" != "--create-relation" && \
+		"${PARAMETERS[0]}" != "-d" && \
+		"${PARAMETERS[0]}" != "--delete-family" && \
 		"${PARAMETERS[0]}" != "-u" && \
 		"${PARAMETERS[0]}" != "--update-services"
 	]]
@@ -275,6 +288,9 @@ elif [[ "${PARAMETERS[0]}" == "-r" || "${PARAMETERS[0]}" == "--create-relation" 
 elif [[ "${PARAMETERS[0]}" == "-u" || "${PARAMETERS[0]}" == "--update-services" ]] && [[ ${#PARAMETERS[@]} == 2 ]]
 	then
 	update_services
+elif [[ "${PARAMETERS[0]}" == "-d" || "${PARAMETERS[0]}" == "--delete-family" ]] && [[ ${#PARAMETERS[@]} == 2 ]]
+	then
+	delete_family
 else
 	echo -e "$USAGE_MSG"
 fi
