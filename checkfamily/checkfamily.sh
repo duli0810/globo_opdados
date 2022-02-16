@@ -69,7 +69,7 @@ done
 # 5 – Criar a relação entre o titular e o dependente
 # 	  Atenção! Essa operação não pode ser facilmente desfeita! Conferir globoids do titular e dependente.
 #   
-# 	  curl -X POST -H "Content-Type: application/json" https://globoid-family-api.backstage.globoi.com/internal/granted/relation -d "{'ownerID': $GLBID_OWNER, 'grantedID': $GLBID_DEPENDENT}" -H "Authorization: Bearer $TOKEN_BS" -v
+# 	  curl -X POST -H 'Content-Type: application/json' https://globoid-family-api.backstage.globoi.com/internal/granted/relation -d '{\"ownerID\": \"$GLBID_OWNER\", \"grantedID\": \"$GLBID_DEPENDENT\"}' -H 'Authorization: Bearer $TOKEN_BS' -v
 #   
 # 	  Repetir a etapa 3 para confirmar que o dependente entrou para a família do titular. Caso contrário, chamar a etapa 5 novamente.
 #
@@ -77,13 +77,13 @@ done
 # 6 – Atualizar serviços do titular para o dependente
 # 	  Atenção! Conferir os serviços do titular antes de chamar essa rota, pois ela replicará os serviços do titular para seus dependentes.
 # 
-# 	  curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header "Content-Type: application/json" --data-raw "{'globoid': $GLBID_OWNER}" -H "Authorization: Bearer $TOKEN_BS" -v
+# 	  curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services  --header 'Content-Type: application/json' --data-raw '{\"globoid\": \"$GLBID\"}' -H \"Authorization: Bearer $TOKEN_BS\" -v
 #
 #
 # 7 - Remoção de familia 
 # Atenção! Essa rota nao irá remover a família caso o usuário possua serviços ATIVOS que concedam perfil OWNER no Family API. Caso a rota nao funcione, é necessário avaliar qual serviceID está forçando o usuário a ter a familia em questão
 # 
-# curl --location --request PUT 'https://be.globoid-family-api.globoi.com/v1/user/family/services' --header 'Content-Type: application/json' --data-raw '{"globoid": "$GLOBOID_ALVO"}'
+#     curl --location --request PUT https://be.globoid-family-api.globoi.com/v1/user/family/services --header 'Content-Type: application/json' --data-raw '{\"globoid\": \"$GLBID\"}' -v
 # 
 
 USAGE_MSG="
@@ -112,7 +112,10 @@ USAGE_MSG="
 		$(basename "$0") operacaowebmedia@corp.globo.com
 		$(basename "$0") -r b8b2c132-554f-48f4-8199-6fd8658e8d0a eef43519-d1e0-4a50-b813-5a9c2d0dd340
 		$(basename "$0") 0cbbac12-a156-44f0-8447-c56a087c9039
-		$(basename "$0") -update-services b8b2c132-554f-48f4-8199-6fd8658e8d0a
+		$(basename "$0") -u b8b2c132-554f-48f4-8199-6fd8658e8d0a
+		$(basename "$0") --update-services b8b2c132-554f-48f4-8199-6fd8658e8d0a
+		$(basename "$0") -d operacao.producao@ig.com
+		$(basename "$0") --delete-family operacao.producao@ig.com
 
 "
 
@@ -255,12 +258,12 @@ function create_relation {
 
 function update_services {
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para atualizar serviços de titular, $IYellow$GLBID$NC, em seus dependentes. $IYellow\nConferir os serviços do titular antes de chamar essa rota, pois ela replicará os serviços do titular para seus dependentes.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"
-	read_option "curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services --header \"Content-Type: application/json\" --data-raw \"{'globoid': $GLBID}\" -H \"Authorization: Bearer $TOKEN_BS\" -v"
+	read_option "curl --location --request PUT https://globoid-family-api.backstage.globoi.com/v1/user/family/services  --header 'Content-Type: application/json' --data-raw '{\"globoid\": \"$GLBID\"}' -H \"Authorization: Bearer $TOKEN_BS\" -v"
 }
 
 function delete_family {
-	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para deletar a família do suposto titular, $IYellow$GLBID$NC.\n Essa rota nao irá remover a família caso o usuário possua serviços ATIVOS que concedam perfil OWNER no Family API. Caso a rota nao funcione, é necessário avaliar qual serviceID está forçando o usuário a ter a familia em questão"
-	read_option "curl --location --request PUT 'https://be.globoid-family-api.globoi.com/v1/user/family/services' --header 'Content-Type: application/json' -data-raw '{\"globoid\": \"$GLBID\"}'"
+	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para deletar a família do suposto titular, $IYellow$GLBID$NC.\nEssa rota nao irá remover a família caso o usuário possua serviços ATIVOS que concedam perfil OWNER no Family API. Caso a rota nao funcione, é necessário avaliar qual serviceID está forçando o usuário a ter a familia em questão.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"
+	read_option "curl --location --request PUT https://be.globoid-family-api.globoi.com/v1/user/family/services --header 'Content-Type: application/json' --data-raw '{\"globoid\": \"$GLBID\"}' -v"
 }
 
 # Main program
