@@ -139,12 +139,25 @@ function project_chosen {
     echo -e "( 0 or anything ) to quit!"
     declare -i option
     read option
-    while [[ "$option" > $lenght_vignette_file_list && "$option" != 0 ]] 
+    for ((i=1;i<=30;i++));
     do
-      echo -e "Invalid option! Try again (0 to $lenght_vignette_file_list), or ( 0 ) to quit: "
-      read option
+      array[$i-1]="$i"
     done
-    [[ "$option" == 0 ]] && exit 1
+    haveitem=0
+    while [[ "$haveitem" == 0 ]]
+    do
+      [[ "$option" == 0 ]] && exit 1
+      for item in "${array[@]}"; 
+      do
+        if [[ "$option" == "$item" ]]; then
+          haveitem=1
+        fi
+      done
+      if [[ "$haveitem" == 0 ]]; then
+        echo -e "Invalid option! Try again (1 to $lenght_vignette_file_list), or ( 0 ) to quit: "
+        read option
+      fi
+    done
     option=$(($option-1))
     redirect_filer_path="$vignette""${vignette_files_list[$option]}"
   #### VIGNETTE END BLOCK ####
