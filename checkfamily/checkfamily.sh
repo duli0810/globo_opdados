@@ -90,21 +90,23 @@ USAGE_MSG="
 	Utilizado para trazer as infromações de família na globoid-family-api de um usuário 
 	cadastrado no Glive e também aplicar WAs pertinentes, confrome documentação abaixo:
 
-	KB0014851 - https://globoservice.service-now.com/kb_view.do?sysparm_article=KB0014851
+	"$IBlue"KB0014851 - https://globoservice.service-now.com/kb_view.do?sysparm_article=KB0014851"$NC"
 
 	Usage: 
 		$(basename "$0") <options> [<e-mail>|<globoid>]
 		$(basename "$0") [ -r | --create-relation ] <owner_globoid> <dependent_globoid>
+		$(basename "$0") [ -D | --delete-dependent ] <owner_globoid> <dependent_globoid>
 	
 	Options:
-    	-h, --help                      show this help msg.
-    	-f, --create-family <size>      WA to create the owner's family. It is 
-					necessary to inform the family size, that is, 
-					the number of dependents. The size parameter 
-					must be an integer.
-    	-r, --create-relation           WA to create owner-dependent relationship.
-	-u, --update-services		WA to update services from owner to dependent.
-		-d, --delete-family				WA to delete family.
+        -h, --help                      show this help msg.
+        -f, --create-family <size>      WA to create the owner's family. It is 
+	                                necessary to inform the family size, that is, 
+	                                the number of dependents. The size parameter 
+	                                must be an integer.
+        -r, --create-relation           WA to create owner-dependent relationship.
+	-u, --update-services           WA to update services from owner to dependent.
+	-d, --delete-family             WA to delete family.
+	-D, --delete-dependent          WA to delete dependent.
 
 	Usage Examples:
 		$(basename "$0") operacao.producao@ig.com
@@ -116,6 +118,8 @@ USAGE_MSG="
 		$(basename "$0") --update-services b8b2c132-554f-48f4-8199-6fd8658e8d0a
 		$(basename "$0") -d operacao.producao@ig.com
 		$(basename "$0") --delete-family operacao.producao@ig.com
+		$(basename "$0") -D <owner_globoid> <dependent_globoid>
+		$(basename "$0") --delete-dependent <owner_globoid> <dependent_globoid>
 
 "
 
@@ -266,6 +270,13 @@ function delete_family {
 	read_option "curl --location --request PUT https://be.globoid-family-api.globoi.com/v1/user/family/services --header 'Content-Type: application/json' --data-raw '{\"globoid\": \"$GLBID\"}' -v"
 }
 
+function delete_dependent {
+	GLBID_OWNER="${PARAMETERS[1]}"
+	GLBID_DEPENDENT="${PARAMETERS[2]}"
+	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para exclusão do dependente $IYellow$GLBID_DEPENDENT$NC, da família do titular $IYellow$GLBID_OWNER$NC,. $IYellow\nEssa operação não pode ser facilmente desfeita! Conferir globoids do titular e dependente.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"	
+	read_option "curl -X POST -H 'Content-Type: application/json' https://globoid-family-api.backstage.globoi.com//v1/user/family/owners/ -d '{\"grantedID\": \"$GLBID_DEPENDENT\", \"ownerID\": \"$GLBID_OWNER\", \"origin\": \"Exclusão por OP Dados\"}' -H 'Authorization: Bearer $TOKEN_BS' -v"
+}
+
 # Main program
 if [[
 		"${PARAMETERS[0]}" != "" && \
@@ -278,7 +289,9 @@ if [[
 		"${PARAMETERS[0]}" != "-d" && \
 		"${PARAMETERS[0]}" != "--delete-family" && \
 		"${PARAMETERS[0]}" != "-u" && \
-		"${PARAMETERS[0]}" != "--update-services"
+		"${PARAMETERS[0]}" != "--update-services" && \
+		"${PARAMETERS[0]}" != "-D" && \
+		"${PARAMETERS[0]}" != "--delete-dependent"
 	]]
 	then
 	check_family
@@ -294,6 +307,9 @@ elif [[ "${PARAMETERS[0]}" == "-u" || "${PARAMETERS[0]}" == "--update-services" 
 elif [[ "${PARAMETERS[0]}" == "-d" || "${PARAMETERS[0]}" == "--delete-family" ]] && [[ ${#PARAMETERS[@]} == 2 ]]
 	then
 	delete_family
+elif [[ "${PARAMETERS[0]}" == "-D" || "${PARAMETERS[0]}" == "--delete-dependent" ]] && [[ ${#PARAMETERS[@]} == 3 ]]
+	then
+	delete_dependent
 else
 	echo -e "$USAGE_MSG"
 fi
