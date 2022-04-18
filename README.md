@@ -59,3 +59,25 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 
 * curlinloop
 >É utilizado para efetuar o comando ```curl``` infinitamento com a finalidade de checar algum endpoint de healtcheck
+
+## Dicas de Uso
+### - Baixe o projeto para algum diretório ou clone o reposótório:
+#### Clone with HTTPS
+```
+git clone https://gitlab.globoi.com/leonardo.brito/scripts_produtividade.git
+```
+#### ou
+#### Clone with SSH
+```
+git clone gitlab@gitlab.globoi.com:leonardo.brito/scripts_produtividade.git
+```
+### - Para tornar os scripts executáveis e adicioná-los a /usr/bin do sistema
+#### No diretório raiz do projeto, execute:
+```
+make run
+```
+### - Para remover os links simbólicos dos scripts da /usr/bin do sistema
+#### No diretório raiz do projeto, execute:
+```
+make clean
+```
