@@ -90,7 +90,7 @@ if [[ "${PARAMETERS[0]}" != "" && "${#PARAMETERS[@]}" == 1 ]]
 	check_rm
 elif [[ "${#PARAMETERS[@]}" == 2 && "${PARAMETERS[0]}" == "-d" || "${#PARAMETERS[@]}" == 2 && "${PARAMETERS[0]}" == "--delete" ]]
 	then
-	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para que o "$IBlue"relationship-manager$NC não reconheça o usuário infromado como titular da família. Tem certeza que deseja continuar? (s para sim ou n para não)"
+	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para que o "$IBlue"relationship-manager$NC não reconheça o usuário informado como titular da família. Tem certeza que deseja continuar? (s para sim ou n para não)"
 	read option
     while [[ "$option" != "s" && "$option" != "n" ]]
     do
