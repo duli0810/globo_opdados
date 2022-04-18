@@ -1,6 +1,6 @@
 run:
 	@ echo "\nTransformando os scripts em executável:"
-	chmod -Rc +x .
+	chmod -R +x .
 	ls -lhart */*.sh
 	ls -lhart */*.py
 	@ echo "\n-----------------------------------------------------------------------"
