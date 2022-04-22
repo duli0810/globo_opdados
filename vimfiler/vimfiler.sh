@@ -60,6 +60,7 @@ edg2_revistapegn="/mnt/projetos/deploy-fe/edg2/redirect-revistapegn.conf"
 edg4_revistacrescer="/mnt/projetos/deploy-fe/edg4/redirect-crescer.conf"
 edg3_revistaglamour="/mnt/projetos/deploy-fe/edg3/redirect-revistaglamour.conf"
 edg2_epoca="/mnt/projetos/deploy-fe/edg2/redirect-epoca.conf"
+edg2_epocanegocios="/mnt/projetos/deploy-fe/edg2/redirect-epocanegocios.conf"
 
 # Creating array with all inputs
 while test -n "$1"
@@ -77,7 +78,7 @@ Usage: $(basename "$0") <Project Name>
                       vogue $NC|$ICyan casavogue $NC|$ICyan multishow $NC|$ICyan techtudo $NC|$ICyan 
                       revistaquem $NC|$ICyan revistagalileu $NC|$ICyan
                       revistagloborural $NC|$ICyan revistapegn $NC|$ICyan revistacrescer $NC|$ICyan revistaglamour $NC|$ICyan 
-                      epoca $NC]
+                      epoca $NC|$ICyan epocanegocios $NC ]
     -h, --help      display this help and exit
 
     OBS: 
@@ -105,6 +106,7 @@ Usage: $(basename "$0") <Project Name>
         $(basename "$0")$ICyan revistacrescer $NC
         $(basename "$0")$ICyan revistaglamour $NC
         $(basename "$0")$ICyan epoca $NC
+        $(basename "$0")$ICyan epocanegocios $NC
 "
 
 # Return the project chosen by the user setting the variable redirect_filer_path
@@ -187,6 +189,8 @@ function project_chosen {
     redirect_filer_path="$edg3_revistaglamour"
   elif [[ "$1" == "epoca" ]]; then
     redirect_filer_path="$edg2_epoca"
+  elif [[ "$1" == "epocanegocios" ]]; then
+    redirect_filer_path="$edg2_epocanegocios"
   #### GE BLOCK ####
   elif [[ "$1" == "ge" ]]; then
     echo -e "What option? ( 1 ) globoesporte  ( 2 ) sportv  ( q ) to quit."

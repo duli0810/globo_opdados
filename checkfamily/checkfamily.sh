@@ -274,7 +274,7 @@ function delete_dependent {
 	GLBID_OWNER="${PARAMETERS[1]}"
 	GLBID_DEPENDENT="${PARAMETERS[2]}"
 	echo -e "$IYellow[ ATENÇÃO ]$NC O WA será aplicado para exclusão do dependente $IYellow$GLBID_DEPENDENT$NC, da família do titular $IYellow$GLBID_OWNER$NC,. $IYellow\nEssa operação não pode ser facilmente desfeita! Conferir globoids do titular e dependente.$NC\n Tem certeza que deseja continuar? ($IYellow\"s\"$NC para sim ou $IYellow\"n\"$NC para não)"	
-	read_option "curl -X POST -H 'Content-Type: application/json' https://globoid-family-api.backstage.globoi.com//v1/user/family/owners/ -d '{\"grantedID\": \"$GLBID_DEPENDENT\", \"ownerID\": \"$GLBID_OWNER\", \"origin\": \"Exclusão por OP Dados\"}' -H 'Authorization: Bearer $TOKEN_BS' -v"
+	read_option "curl -X DELETE -H 'Content-Type: application/json' https://globoid-family-api.backstage.globoi.com/v1//user/granted -d '{\"grantedID\": \"$GLBID_DEPENDENT\", \"ownerID\": \"$GLBID_OWNER\", \"origin\": \"Exclusão por OP Dados\"}' -H 'Authorization: Bearer $TOKEN_BS' -v"
 }
 
 # Main program
