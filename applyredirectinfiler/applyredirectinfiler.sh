@@ -163,8 +163,8 @@ edg2_fe3="editoraglobo2-prod-fe-3.cmaq22fe-158.cp.globoi.com"
 edg2_reals=("$edg2_fe1" "$edg2_fe2" "$edg2_fe3")
 
 # Farm redirect2.globo.com
-redirect2_fe1="asra11mp03lf15.globoi.com"
-redirect2_fe2="asra11mp03lf16.globoi.com"
+redirect2_fe1="asra01mp11lx03lf15.globoi.com"
+redirect2_fe2="asra01mp11lx04lf16.globoi.com"
 redirect2_fe3="asra03mp05lx04lf15.globoi.com"
 redirect2_fe4="asra03mp05lx04lf16.globoi.com"
 redirect2_fe5="cmah21mp02lf08.globoi.com"
