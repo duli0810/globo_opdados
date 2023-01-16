@@ -4,6 +4,9 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 
 ## Scripts para Ajudar na Produtividade de Redirects
 
+* infouser.py
+>Lista as informações do usuário cadastrada no Glive.
+
 * vimfiler
 >É utilizado para entrar diretamente no arquivo de configuração de redirects, que se encontra no **filer.globoi.com**, de cada projeto **(g1, ge, gshow, etc)**.
 >Esses arquivos de configuração de redirecrt servem os **FEs** do **Core**
@@ -43,6 +46,17 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 * checkconnectcli
 >É utilizado para trazer as infromações de autenticação e troca de tokens entre as apps que compõe o sistema do **globoid-connect**.
 
+* checkverpagamentos.sh
+>Verifica a opcao ver pagamentos esta habilitada.
+
+* deletemonitor.sh
+>Remove a monitoração dos hosts em lote.
+
+* delgranted.sh
+>Deleta o dependente, onde owner ou próprio dependente (granted) não cosegue sair da familia.
+
+* domainblacklist.sh
+>Verifica se dominio esta presente no Black list da Globo.
 * gsatmultibezegrep
 >É utilizado para trazer logs de BE do **Gsatmulti** para descobrir qual conta de usuário já estaria associada a operadora de um determinado cliente que não consegue fazer essa associação com sua conta atual.
 
