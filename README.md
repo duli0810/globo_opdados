@@ -1,7 +1,29 @@
-# scripts_produtividade
+# Scripts Produtividade
 
 Contém scripts que ajudam no dia a dia da Operação Dados
 
+## Dicas de Uso
+### - Baixe o projeto para algum diretório ou clone o reposótório:
+#### Clone with HTTPS
+```
+git clone https://gitlab.globoi.com/operacao_dados_globo/scripts_produtividade.git
+```
+#### Tornar todos os scripts executaveis:
+```
+chmod -R +x *
+```
+#### ou
+
+### - Para tornar os scripts executáveis e adicioná-los a /usr/bin do sistema
+#### No diretório raiz do projeto, execute:
+```
+make run
+```
+### - Para remover os links simbólicos dos scripts da /usr/bin do sistema
+#### No diretório raiz do projeto, execute:
+```
+make clean
+```
 ## Scripts para Ajudar na Produtividade de Redirects
 
 * vimfiler
@@ -57,6 +79,7 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 
 * domainblacklist.sh
 >Verifica se dominio esta presente no Black list da Globo.
+
 * gsatmultibezegrep
 >É utilizado para trazer logs de BE do **Gsatmulti** para descobrir qual conta de usuário já estaria associada a operadora de um determinado cliente que não consegue fazer essa associação com sua conta atual.
 
@@ -74,24 +97,3 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 * curlinloop
 >É utilizado para efetuar o comando ```curl``` infinitamento com a finalidade de checar algum endpoint de healtcheck
 
-## Dicas de Uso
-### - Baixe o projeto para algum diretório ou clone o reposótório:
-#### Clone with HTTPS
-```
-git clone https://gitlab.globoi.com/leonardo.brito/scripts_produtividade.git
-```
-#### ou
-#### Clone with SSH
-```
-git clone gitlab@gitlab.globoi.com:leonardo.brito/scripts_produtividade.git
-```
-### - Para tornar os scripts executáveis e adicioná-los a /usr/bin do sistema
-#### No diretório raiz do projeto, execute:
-```
-make run
-```
-### - Para remover os links simbólicos dos scripts da /usr/bin do sistema
-#### No diretório raiz do projeto, execute:
-```
-make clean
-```
