@@ -4,9 +4,6 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 
 ## Scripts para Ajudar na Produtividade de Redirects
 
-* infouser.py
->Lista as informações do usuário cadastrada no Glive.
-
 * vimfiler
 >É utilizado para entrar diretamente no arquivo de configuração de redirects, que se encontra no **filer.globoi.com**, de cada projeto **(g1, ge, gshow, etc)**.
 >Esses arquivos de configuração de redirecrt servem os **FEs** do **Core**
@@ -21,6 +18,9 @@ Contém scripts que ajudam no dia a dia da Operação Dados
 >É utilizado para executar, em loop, o comando ```curl``` para cada **url** listada em um arquivo qualquer, definido a gosto, com a finalidade de obter os saltos de redirect.
 
 ## Scripts para Ajudar no Troubleshoot de Incidentes e Requisições
+
+* infouser.py
+>Lista as informações do usuário cadastrada no Glive.
 
 * clientgloboidinfo (**.sh** e **.py**)
 >É utilizado para trazer as infromações de cadastro de usuários no Glive, bem como o status no integrador (eva-int) e as infromações dos ids de serviço provisionados. Utilizando o **.py** temos opções como parametros que ajudam a filtrar os serviços buscando por uma string em suas descrições. Temos, também, o parametro ```-r``` ou ```--resume``` que traz as mesmas infromações anteriores, porém exibindo apenas os serviços que impedem o usuário buscado de ter seu cadastro excluído do Glive.
