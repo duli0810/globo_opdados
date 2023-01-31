@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-########################### INFORMAÇOES ##########################################
+########################## INFORMAÇOES ##########################################
 #
 #Nome do Script : infouserall.py
 #Descriçao      : Lista as informações do usuário cadastrada no Glive. 
 #Autor          : Eduardo Rodrigues da Silva
 #Email          : eduardo.rodrigues@g.globo
 #Equipe         : Operaçao Dados
-#versao         : 2.0
+#versao         : 2.1
 #Complemento    : KB0105132
 #                  
 #
@@ -50,119 +50,176 @@ help=f'''
         {IGreen} Lista as informações do usuário cadastrada no Glive. 
         {NC}                 
 '''
+###################### GERA BS-TOKEN ############################ 
+
+headers = {
+    'Authorization': 'Basic RUQxOFgvUXBNaTNjMlFDSFlBWEJKUT09Ojl1aGlmWG5kdGpoN01LZzVSMG5nMWc9PQ==',
+}
+
+data = {
+    'grant_type': 'client_credentials',
+}
+
+BSToken = requests.post('https://accounts.backstage.globoi.com/token', headers=headers, data=data).json()
+
+#BSToken = BSToken.json()
+
+BSToken = BSToken["access_token"]
+
+#print(BSToken)
+
 ###################### FUNÇÃO OBTER GLOBOID ############################ 
-
-# Função onde o resultado (return) sempre será o GLOBOID, mesmo que o parâmetro informando seja o e-mail.
-
-def key_user(): 
-    try:
-        param1 = sys.argv[1]
-
-        if '@' in  param1:
-            
-            headers = {
-            'Backstage-Client-Id': 'developer',
-            }
-
-            response = requests.get('http://be.glive.globoi.com/v2/users/email/'+ param1, headers=headers)
-
-            globoid = response.json()
-            
-            globoid = globoid["globoId"]
-            
-            email = param1
-            
-            return globoid
-
-        elif param1.find('@') != True:
-
-            headers = {
-            'Backstage-Client-Id': 'developer',
-            }
-
-            response = requests.get('http://be.glive.globoi.com/v2/users/'+ param1, headers=headers)
-
-            email = response.json()
-
-            email = email["email"]
-            
-            return param1 
-    
-    except:
-
-        print("Favor informar um GloboID ou E-mail valido")
-        sys.exit()
-
-    else:
-        sys.exit()
-
-    
-    
-###################### GERA INFORMACÃO CADASTRAL DO USUÁRIO NO GLIVE ############################ 
 
 if len(sys.argv) < 2: # Verifica quantos args vai receber, o nome do programa conta como 1
     
     print(help)
+    sys.exit()
                
 else:
-    key = key_user()
-
-
-    headers = {
-        "Backstage-Client-Id": "developer",
-        }
-
-##
-    cons_email = requests.get('http://be.glive.globoi.com/v2/users/'+ key, headers=headers) # Consulta o email através do globoid
-
-    email = cons_email.json()
-
-    email = email["email"]
-##
-    info1 = requests.get("http://be.glive.globoi.com/v2/users/" + key, headers=headers).json()
-
-    dados = json.dumps(info1, indent = 4)
     
-    print (IYellow + "\n==================== GLIVE  ====================\n" + NC)
-    print ("Informações do Glive do usuário de Email " + email + " com o GloboID " + key)
-    #print (IYellow + "\n===============================================\n" + NC)
-    print (IYellow + "\n====== DADOS DO USUÁRIO PELO GLIVE ======\n" + NC)
-    print (dados)
-    print (IYellow + "\n====== SERVIÇOS DO USUÁRIO PELO GLIVE ======\n" + NC)
+    param1 = sys.argv[1]
+    
+    try:
+            
+            if '@' in  param1:
+                    
+                    headers = {
+                    'Backstage-Client-Id': 'developer',
+                    }
 
-    services_list = requests.get('http://be.glive.globoi.com/v2/users/' + key + '/services', headers=headers)
+                    response = requests.get('http://be.glive.globoi.com/v2/users/email/'+ param1, headers=headers).json()
 
-    serviceid = services_list.json()
+                    globoid = response["globoId"]
+                    
+                    email = param1
+                    
+            elif param1.find('@') != True:
 
-    services_list = requests.get('http://be.glive.globoi.com/v2/users/'+ key +'/services', headers=headers)
+                    headers = {
+                    'Backstage-Client-Id': 'developer',
+                    }
 
-serviceid = services_list.json()
+                    response = requests.get('http://be.glive.globoi.com/v2/users/'+ param1, headers=headers).json()
 
-for x in serviceid [0:100]: # retirando dicionario de uma lista de distruição
-    dict = {}
-    dict.update(x)
-    x = x ["serviceId"]
-    #print (x)
+                    email = response["email"]
 
-###################### CONSULTA DISPLAY NAME DO SERVIÇO GLOBOID ############################
-    y = str(x)
-    headers = {
+                    globoid = param1
+
+    except:
+                print (IYellow + "\n===================== OPS ====================\n" + NC)
+                print (f'Favor informar um GloboID ou E-mail válido.')
+                print (IYellow + "\n===============================================\n" + NC)
+                sys.exit()
+
+###################### GERA INFORMACÃO CADASTRAL DO USUÁRIO NO GLIVE ############################ 
+
+#key = key_user()
+
+
+info1 = requests.get("http://be.glive.globoi.com/v2/users/" + globoid, headers=headers).json()
+
+dados = json.dumps(info1, indent = 4)
+
+#print (dados)
+
+################################# TYPE USER - PAY #################################################
+headers = {
         'Backstage-Client-Id': 'developer',
     }
 
-    response = requests.get('http://be.glive.globoi.com/v2/services/'+ y, headers=headers)
+pay_user = requests.get('http://be.glive.globoi.com/v2/users/'+ globoid +'/subscription/status', headers=headers).json()
 
-    name_serviceid = response.json()
+pay_user = pay_user['status']
 
-    name_serviceid = name_serviceid["description"]
-    
-    chave2= "description"
-    dict2 = {} # Criando dicionário para display name dos serviços
-    dict2 [chave2] = name_serviceid
-    #print (dict2)
-    
-    dict.update(dict2) # Atualizando dicionário de serviços do GloboID informado
-    
-    resultjson = json.dumps(dict, indent = 4)
-    
-    print (resultjson)
+#print (pay_user)
+
+###################### GERA INFORMACÃO DO SERVIÇOS DO USUÁRIO NO GLIVE ############################
+         
+def service():
+    headers = {
+                "Backstage-Client-Id": "developer",
+                }
+
+    services_list = requests.get('http://be.glive.globoi.com/v2/users/' + globoid + '/services', headers=headers)
+
+    serviceid = services_list.json()
+
+    services_list = requests.get('http://be.glive.globoi.com/v2/users/'+ globoid +'/services', headers=headers)
+
+    serviceid = services_list.json()
+
+    for x in serviceid [0:100]: # retirando dicionario de uma lista de distruição
+        dict = {}
+        dict.update(x)
+        x = x ["serviceId"]
+        #print (x)
+
+    ###################### CONSULTA DISPLAY NAME DO SERVIÇO GLOBOID #################################
+        y = str(x)
+        headers = {
+            'Backstage-Client-Id': 'developer',
+        }
+
+        response = requests.get('http://be.glive.globoi.com/v2/services/'+ y, headers=headers)
+
+        name_serviceid = response.json()
+
+        name_serviceid = name_serviceid["description"]
+        
+        chave2= "description"
+        dict2 = {} # Criando dicionário para display name dos serviços
+        dict2 [chave2] = name_serviceid
+        #print (dict2)
+        
+        dict.update(dict2) # Atualizando dicionário de serviços do GloboID informado
+        
+        resultjson = json.dumps(dict, indent = 4)
+        
+        print (resultjson)
+
+#service()
+
+################################# ALF #############################################################
+
+def alf():
+
+    headers = {
+        'Authorization': f'Bearer {BSToken}',
+    }
+
+
+    const_alf = requests.get('https://alf-be.backstage.globoi.com/admin/v1/users/'+ globoid, headers=headers).json()
+
+
+    for alf in const_alf [0:100]: # retirando dicionario de uma lista de distruição
+        dict = {}
+        dict.update(alf)
+        if "associationList" in dict:
+
+            alf = alf["associationList"]
+            alf = json.dumps(alf, indent = 4)
+            print (f'{IGreen}O (a) usuário (a) {IBlue}{email}{NC}{IGreen} possui associação com operadora:{NC}')
+            print(alf)
+
+        else:
+            #print ("Usuário não esta associado a operadora")
+            print (f'{IRed}Usuário NÃO esta associado a nenhuma operadora{NC}')
+
+
+######################################### RESULTADOS ###############################################
+
+print (IYellow + "\n==================== GLIVE  ====================\n" + NC)
+
+print (f'O (a) usuário (a) {IBlue}{email}{NC}, GloboID {IBlue}{globoid}{NC} é considerado um cliente {IBlue}{pay_user}{NC}')
+
+print (IYellow + "\n========== DADOS DO USUÁRIO PELO GLIVE ==========\n" + NC)
+
+print (dados)
+
+print (IYellow + "\n===================== ALF ==========================\n" + NC)
+
+alf()
+
+print (IYellow + "\n======== SERVIÇOS DO USUÁRIO PELO GLIVE ============\n" + NC)
+
+service()
